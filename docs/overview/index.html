@@ -18,27 +18,31 @@
 <link rel="icon" type="image/png" href="/website/favicons/android-192x192.png" sizes="192x192">
 
 <title>Overview | Pokémonitor</title>
-<meta name="description" content="Here&#39;s where your user finds out if your project is for them.">
+<meta name="description" content="Pokemonitor">
 <meta property="og:url" content="https://irtom.github.io/website/docs/overview/">
   <meta property="og:site_name" content="Pokémonitor">
   <meta property="og:title" content="Overview">
-  <meta property="og:description" content="Here&#39;s where your user finds out if your project is for them.">
+  <meta property="og:description" content="Pokemonitor">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:modified_time" content="2024-09-28T19:59:03+02:00">
 
   <meta itemprop="name" content="Overview">
-  <meta itemprop="description" content="Here&#39;s where your user finds out if your project is for them.">
+  <meta itemprop="description" content="Pokemonitor">
   <meta itemprop="dateModified" content="2024-09-28T19:59:03+02:00">
-  <meta itemprop="wordCount" content="244">
+  <meta itemprop="wordCount" content="1">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Overview">
-  <meta name="twitter:description" content="Here&#39;s where your user finds out if your project is for them.">
+  <meta name="twitter:description" content="Pokemonitor">
 <link rel="preload" href="/website/scss/main.min.e27e9dbace77e637983a3900590da42ddfc471da09131ef565f7ea5853a1205a.css" as="style"><link href="/website/scss/main.min.e27e9dbace77e637983a3900590da42ddfc471da09131ef565f7ea5853a1205a.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+<script defer
+  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
+  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
   </head>
@@ -50,30 +54,30 @@
   <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="/website/about/"><span>About</span></a>
+        <a class="nav-link" href="/website/about/"><span>Home</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="/website/docs/"><span>Docs</span></a>
+        <a class="nav-link active" href="/website/docs/"><span>Monitoring</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/website/blog/"><span>Blog</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/website/community/"><span>Community</span></a>
-      </li>
-      <li class="nav-item dropdown d-none d-lg-block">
-        <div class="dropdown">
-  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/website/fa/docs/overview/">فارسی (Persian)</a></li>
-    </ul>
-</div></li>
       </ul>
   </div>
   <div class="d-none d-lg-block">
-    <div class="td-search">
+    <div class="td-search td-search--offline">
   <div class="td-search__icon"></div>
-  <input type="search" class="td-search__input form-control td-search-input" placeholder="Search this site…" aria-label="Search this site…" autocomplete="off">
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/website/offline-search-index.c25635254f94ca267458fa76329c2a9a.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
 </div>
   </div>
 </div>
@@ -85,327 +89,609 @@
           <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
             <div id="td-sidebar-menu" class="td-sidebar__inner">
   <form class="td-sidebar__search d-flex align-items-center">
-    <div class="td-search">
+    <div class="td-search td-search--offline">
   <div class="td-search__icon"></div>
-  <input type="search" class="td-search__input form-control td-search-input" placeholder="Search this site…" aria-label="Search this site…" autocomplete="off">
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/website/offline-search-index.c25635254f94ca267458fa76329c2a9a.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
 </div>
     <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
     </button>
   </form>
   <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
-    <div class="td-sidebar-nav__section nav-item dropdown d-block d-lg-none">
-      <div class="dropdown">
-  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/website/fa/docs/overview/">فارسی (Persian)</a></li>
-    </ul>
-</div>
-    </div>
     <ul class="td-sidebar-nav__section pe-md-3 ul-0">
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-websitedocs-li">
-  <a href="/website/docs/" title="Documentation" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-websitedocs"><span class="">Docs</span></a>
+  <a href="/website/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-websitedocs"><span class="">Monitoring</span></a>
   <ul class="ul-1">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-websitedocsoverview-li">
   <input type="checkbox" id="m-websitedocsoverview-check" checked/>
   <label for="m-websitedocsoverview-check"><a href="/website/docs/overview/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-websitedocsoverview"><span class="td-sidebar-nav-active-item">Overview</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocsgetting-started-li">
-  <input type="checkbox" id="m-websitedocsgetting-started-check"/>
-  <label for="m-websitedocsgetting-started-check"><a href="/website/docs/getting-started/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocsgetting-started"><span class="">Getting Started</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocssets-li">
+  <input type="checkbox" id="m-websitedocssets-check"/>
+  <label for="m-websitedocssets-check"><a href="/website/docs/sets/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets"><span class="">Sets</span></a></label>
   
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsgetting-startedexample-page-li">
-  <input type="checkbox" id="m-websitedocsgetting-startedexample-page-check"/>
-  <label for="m-websitedocsgetting-startedexample-page-check"><a href="/website/docs/getting-started/example-page/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsgetting-startedexample-page"><span class="">Example Page</span></a></label>
-  
-</li>
-  </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsexamples-li">
-  <input type="checkbox" id="m-websitedocsexamples-check"/>
-  <label for="m-websitedocsexamples-check"><a href="/website/docs/examples/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsexamples"><span class="">Examples</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsconcepts-li">
-  <input type="checkbox" id="m-websitedocsconcepts-check"/>
-  <label for="m-websitedocsconcepts-check"><a href="/website/docs/concepts/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsconcepts"><span class="">Concepts</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocsoriginal-series-li">
-  <input type="checkbox" id="m-websitedocsoriginal-series-check"/>
-  <label for="m-websitedocsoriginal-series-check"><a href="/website/docs/original-series/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocsoriginal-series"><span class="">Original series</span></a></label>
-  
-  <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocsoriginal-seriesbase-set-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set-check"><a href="/website/docs/original-series/base-set/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocsoriginal-seriesbase-set"><span class="">Base set</span></a></label>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocssets01-original-series-li">
+  <input type="checkbox" id="m-websitedocssets01-original-series-check"/>
+  <label for="m-websitedocssets01-original-series-check"><a href="/website/docs/sets/01-original-series/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets01-original-series"><span class="">Original Series</span></a></label>
   
   <ul class="ul-3 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set043---abra-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set043---abra-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set043---abra-check"><a href="/website/docs/original-series/base-set/043---abra/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set043---abra"><span class="">Abra</span></a></label>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets01-original-series01-base-set-li">
+  <input type="checkbox" id="m-websitedocssets01-original-series01-base-set-check"/>
+  <label for="m-websitedocssets01-original-series01-base-set-check"><a href="/website/docs/sets/01-original-series/01-base-set/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets01-original-series01-base-set"><span class="">Base Set</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set001---alakazam-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set001---alakazam-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set001---alakazam-check"><a href="/website/docs/original-series/base-set/001---alakazam/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set001---alakazam"><span class="">Alakazam</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets01-original-series02-jungle-li">
+  <input type="checkbox" id="m-websitedocssets01-original-series02-jungle-check"/>
+  <label for="m-websitedocssets01-original-series02-jungle-check"><a href="/website/docs/sets/01-original-series/02-jungle/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets01-original-series02-jungle"><span class="">Jungle</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set023---arcanine-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set023---arcanine-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set023---arcanine-check"><a href="/website/docs/original-series/base-set/023---arcanine/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set023---arcanine"><span class="">Arcanine</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets01-original-series03-fossil-li">
+  <input type="checkbox" id="m-websitedocssets01-original-series03-fossil-check"/>
+  <label for="m-websitedocssets01-original-series03-fossil-check"><a href="/website/docs/sets/01-original-series/03-fossil/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets01-original-series03-fossil"><span class="">Fossil</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set017---beedrill-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set017---beedrill-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set017---beedrill-check"><a href="/website/docs/original-series/base-set/017---beedrill/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set017---beedrill"><span class="">Beedrill</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets01-original-series04-base-set-2-li">
+  <input type="checkbox" id="m-websitedocssets01-original-series04-base-set-2-check"/>
+  <label for="m-websitedocssets01-original-series04-base-set-2-check"><a href="/website/docs/sets/01-original-series/04-base-set-2/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets01-original-series04-base-set-2"><span class="">Base Set 2</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set091---bill-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set091---bill-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set091---bill-check"><a href="/website/docs/original-series/base-set/091---bill/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set091---bill"><span class="">Bill</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets01-original-series05-team-rocket-li">
+  <input type="checkbox" id="m-websitedocssets01-original-series05-team-rocket-check"/>
+  <label for="m-websitedocssets01-original-series05-team-rocket-check"><a href="/website/docs/sets/01-original-series/05-team-rocket/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets01-original-series05-team-rocket"><span class="">Team Rocket</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set002---blastoise-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set002---blastoise-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set002---blastoise-check"><a href="/website/docs/original-series/base-set/002---blastoise/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set002---blastoise"><span class="">Blastoise</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets01-original-series06-gym-heroes-li">
+  <input type="checkbox" id="m-websitedocssets01-original-series06-gym-heroes-check"/>
+  <label for="m-websitedocssets01-original-series06-gym-heroes-check"><a href="/website/docs/sets/01-original-series/06-gym-heroes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets01-original-series06-gym-heroes"><span class="">Gym Heroes</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set044---bulbasaur-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set044---bulbasaur-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set044---bulbasaur-check"><a href="/website/docs/original-series/base-set/044---bulbasaur/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set044---bulbasaur"><span class="">Bulbasaur</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set045---caterpie-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set045---caterpie-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set045---caterpie-check"><a href="/website/docs/original-series/base-set/045---caterpie/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set045---caterpie"><span class="">Caterpie</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set003---chansey-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set003---chansey-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set003---chansey-check"><a href="/website/docs/original-series/base-set/003---chansey/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set003---chansey"><span class="">Chansey</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set004---charizard-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set004---charizard-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set004---charizard-check"><a href="/website/docs/original-series/base-set/004---charizard/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set004---charizard"><span class="">Charizard</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set046---charmander-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set046---charmander-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set046---charmander-check"><a href="/website/docs/original-series/base-set/046---charmander/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set046---charmander"><span class="">Charmander</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set024---charmeleon-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set024---charmeleon-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set024---charmeleon-check"><a href="/website/docs/original-series/base-set/024---charmeleon/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set024---charmeleon"><span class="">Charmeleon</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set005---clefairy-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set005---clefairy-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set005---clefairy-check"><a href="/website/docs/original-series/base-set/005---clefairy/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set005---clefairy"><span class="">Clefairy</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set070---clefairy-doll-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set070---clefairy-doll-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set070---clefairy-doll-check"><a href="/website/docs/original-series/base-set/070---clefairy-doll/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set070---clefairy-doll"><span class="">Clefairy Doll</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set071---computer-search-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set071---computer-search-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set071---computer-search-check"><a href="/website/docs/original-series/base-set/071---computer-search/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set071---computer-search"><span class="">Computer Search</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set080---defender-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set080---defender-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set080---defender-check"><a href="/website/docs/original-series/base-set/080---defender/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set080---defender"><span class="">Defender</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set072---devolution-spray-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set072---devolution-spray-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set072---devolution-spray-check"><a href="/website/docs/original-series/base-set/072---devolution-spray/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set072---devolution-spray"><span class="">Devolution Spray</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set025---dewgong-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set025---dewgong-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set025---dewgong-check"><a href="/website/docs/original-series/base-set/025---dewgong/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set025---dewgong"><span class="">Dewgong</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set047---diglett-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set047---diglett-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set047---diglett-check"><a href="/website/docs/original-series/base-set/047---diglett/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set047---diglett"><span class="">Diglett</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set048---doduo-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set048---doduo-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set048---doduo-check"><a href="/website/docs/original-series/base-set/048---doduo/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set048---doduo"><span class="">Doduo</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set096---double-colorless-energy-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set096---double-colorless-energy-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set096---double-colorless-energy-check"><a href="/website/docs/original-series/base-set/096---double-colorless-energy/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set096---double-colorless-energy"><span class="">Double Colorless Energy</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set018---dragonair-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set018---dragonair-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set018---dragonair-check"><a href="/website/docs/original-series/base-set/018---dragonair/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set018---dragonair"><span class="">Dragonair</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set026---dratini-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set026---dratini-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set026---dratini-check"><a href="/website/docs/original-series/base-set/026---dratini/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set026---dratini"><span class="">Dratini</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set049---drowzee-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set049---drowzee-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set049---drowzee-check"><a href="/website/docs/original-series/base-set/049---drowzee/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set049---drowzee"><span class="">Drowzee</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set019---dugtrio-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set019---dugtrio-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set019---dugtrio-check"><a href="/website/docs/original-series/base-set/019---dugtrio/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set019---dugtrio"><span class="">Dugtrio</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set020---electabuzz-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set020---electabuzz-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set020---electabuzz-check"><a href="/website/docs/original-series/base-set/020---electabuzz/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set020---electabuzz"><span class="">Electabuzz</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set021---electrode-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set021---electrode-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set021---electrode-check"><a href="/website/docs/original-series/base-set/021---electrode/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set021---electrode"><span class="">Electrode</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set092---energy-removal-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set092---energy-removal-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set092---energy-removal-check"><a href="/website/docs/original-series/base-set/092---energy-removal/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set092---energy-removal"><span class="">Energy Removal</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set081---energy-retrieval-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set081---energy-retrieval-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set081---energy-retrieval-check"><a href="/website/docs/original-series/base-set/081---energy-retrieval/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set081---energy-retrieval"><span class="">Energy Retrieval</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set027---farfetchd-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set027---farfetchd-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set027---farfetchd-check"><a href="/website/docs/original-series/base-set/027---farfetchd/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set027---farfetchd"><span class="">Farfetch&#39;d</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set097---fighting-energy-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set097---fighting-energy-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set097---fighting-energy-check"><a href="/website/docs/original-series/base-set/097---fighting-energy/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set097---fighting-energy"><span class="">Fighting Energy</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set098---fire-energy-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set098---fire-energy-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set098---fire-energy-check"><a href="/website/docs/original-series/base-set/098---fire-energy/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set098---fire-energy"><span class="">Fire Energy</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set082---full-heal-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set082---full-heal-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set082---full-heal-check"><a href="/website/docs/original-series/base-set/082---full-heal/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set082---full-heal"><span class="">Full Heal</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set050---gastly-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set050---gastly-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set050---gastly-check"><a href="/website/docs/original-series/base-set/050---gastly/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set050---gastly"><span class="">Gastly</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set099---grass-energy-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set099---grass-energy-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set099---grass-energy-check"><a href="/website/docs/original-series/base-set/099---grass-energy/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set099---grass-energy"><span class="">Grass Energy</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set028---growlithe-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set028---growlithe-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set028---growlithe-check"><a href="/website/docs/original-series/base-set/028---growlithe/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set028---growlithe"><span class="">Growlithe</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set093---gust-of-wind-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set093---gust-of-wind-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set093---gust-of-wind-check"><a href="/website/docs/original-series/base-set/093---gust-of-wind/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set093---gust-of-wind"><span class="">Gust of Wind</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set006---gyarados-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set006---gyarados-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set006---gyarados-check"><a href="/website/docs/original-series/base-set/006---gyarados/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set006---gyarados"><span class="">Gyarados</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set029---haunter-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set029---haunter-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set029---haunter-check"><a href="/website/docs/original-series/base-set/029---haunter/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set029---haunter"><span class="">Haunter</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set007---hitmonchan-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set007---hitmonchan-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set007---hitmonchan-check"><a href="/website/docs/original-series/base-set/007---hitmonchan/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set007---hitmonchan"><span class="">Hitmonchan</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set073---impostor-professor-oak-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set073---impostor-professor-oak-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set073---impostor-professor-oak-check"><a href="/website/docs/original-series/base-set/073---impostor-professor-oak/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set073---impostor-professor-oak"><span class="">Impostor Professor Oak</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set074---item-finder-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set074---item-finder-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set074---item-finder-check"><a href="/website/docs/original-series/base-set/074---item-finder/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set074---item-finder"><span class="">Item Finder</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set030---ivysaur-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set030---ivysaur-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set030---ivysaur-check"><a href="/website/docs/original-series/base-set/030---ivysaur/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set030---ivysaur"><span class="">Ivysaur</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set031---jynx-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set031---jynx-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set031---jynx-check"><a href="/website/docs/original-series/base-set/031---jynx/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set031---jynx"><span class="">Jynx</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set032---kadabra-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set032---kadabra-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set032---kadabra-check"><a href="/website/docs/original-series/base-set/032---kadabra/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set032---kadabra"><span class="">Kadabra</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set033---kakuna-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set033---kakuna-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set033---kakuna-check"><a href="/website/docs/original-series/base-set/033---kakuna/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set033---kakuna"><span class="">Kakuna</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set051---koffing-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set051---koffing-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set051---koffing-check"><a href="/website/docs/original-series/base-set/051---koffing/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set051---koffing"><span class="">Koffing</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set075---lass-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set075---lass-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set075---lass-check"><a href="/website/docs/original-series/base-set/075---lass/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set075---lass"><span class="">Lass</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set100---lightning-energy-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set100---lightning-energy-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set100---lightning-energy-check"><a href="/website/docs/original-series/base-set/100---lightning-energy/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set100---lightning-energy"><span class="">Lightning Energy</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoriginal-seriesbase-set008---machamp-li">
-  <input type="checkbox" id="m-websitedocsoriginal-seriesbase-set008---machamp-check"/>
-  <label for="m-websitedocsoriginal-seriesbase-set008---machamp-check"><a href="/website/docs/original-series/base-set/008---machamp/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsoriginal-seriesbase-set008---machamp"><span class="">Machamp</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets01-original-series07-gym-challenge-li">
+  <input type="checkbox" id="m-websitedocssets01-original-series07-gym-challenge-check"/>
+  <label for="m-websitedocssets01-original-series07-gym-challenge-check"><a href="/website/docs/sets/01-original-series/07-gym-challenge/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets01-original-series07-gym-challenge"><span class="">Gym Challenge</span></a></label>
   
 </li>
   </ul>
-</li>
-  </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocstasks-li">
-  <input type="checkbox" id="m-websitedocstasks-check"/>
-  <label for="m-websitedocstasks-check"><a href="/website/docs/tasks/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocstasks"><span class="">Core Tasks</span></a></label>
-  
-  <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocstasksbeds-li">
-  <input type="checkbox" id="m-websitedocstasksbeds-check"/>
-  <label for="m-websitedocstasksbeds-check"><a href="/website/docs/tasks/beds/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocstasksbeds"><span class="">Bed and Chair Metrics</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocstasksporridge-li">
-  <input type="checkbox" id="m-websitedocstasksporridge-check"/>
-  <label for="m-websitedocstasksporridge-check"><a href="/website/docs/tasks/porridge/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocstasksporridge"><span class="">Porridge Assessment</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocstaskstask-li">
-  <input type="checkbox" id="m-websitedocstaskstask-check"/>
-  <label for="m-websitedocstaskstask-check"><a href="/website/docs/tasks/task/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocstaskstask"><span class="">Another Task</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocstasksponycopters-li">
-  <input type="checkbox" id="m-websitedocstasksponycopters-check"/>
-  <label for="m-websitedocstasksponycopters-check"><a href="/website/docs/tasks/ponycopters/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocstasksponycopters"><span class="">Working with Ponycopters</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocssets02-neo-series-li">
+  <input type="checkbox" id="m-websitedocssets02-neo-series-check"/>
+  <label for="m-websitedocssets02-neo-series-check"><a href="/website/docs/sets/02-neo-series/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets02-neo-series"><span class="">Neo Series</span></a></label>
   
   <ul class="ul-3 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocstasksponycoptersconfiguring-ponycopters-li">
-  <input type="checkbox" id="m-websitedocstasksponycoptersconfiguring-ponycopters-check"/>
-  <label for="m-websitedocstasksponycoptersconfiguring-ponycopters-check"><a href="/website/docs/tasks/ponycopters/configuring-ponycopters/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocstasksponycoptersconfiguring-ponycopters"><span class="">Configuring Ponycopters</span></a></label>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets02-neo-series01-neo-genesis-li">
+  <input type="checkbox" id="m-websitedocssets02-neo-series01-neo-genesis-check"/>
+  <label for="m-websitedocssets02-neo-series01-neo-genesis-check"><a href="/website/docs/sets/02-neo-series/01-neo-genesis/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets02-neo-series01-neo-genesis"><span class="">Neo Genesis</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocstasksponycopterslaunching-ponycopters-li">
-  <input type="checkbox" id="m-websitedocstasksponycopterslaunching-ponycopters-check"/>
-  <label for="m-websitedocstasksponycopterslaunching-ponycopters-check"><a href="/website/docs/tasks/ponycopters/launching-ponycopters/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocstasksponycopterslaunching-ponycopters"><span class="">Launching Ponycopters</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets02-neo-series02-neo-discovery-li">
+  <input type="checkbox" id="m-websitedocssets02-neo-series02-neo-discovery-check"/>
+  <label for="m-websitedocssets02-neo-series02-neo-discovery-check"><a href="/website/docs/sets/02-neo-series/02-neo-discovery/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets02-neo-series02-neo-discovery"><span class="">Neo Discovery</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets02-neo-series03-neo-revelation-li">
+  <input type="checkbox" id="m-websitedocssets02-neo-series03-neo-revelation-check"/>
+  <label for="m-websitedocssets02-neo-series03-neo-revelation-check"><a href="/website/docs/sets/02-neo-series/03-neo-revelation/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets02-neo-series03-neo-revelation"><span class="">Neo Revelation</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets02-neo-series04-neo-destiny-li">
+  <input type="checkbox" id="m-websitedocssets02-neo-series04-neo-destiny-check"/>
+  <label for="m-websitedocssets02-neo-series04-neo-destiny-check"><a href="/website/docs/sets/02-neo-series/04-neo-destiny/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets02-neo-series04-neo-destiny"><span class="">Neo Destiny</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocssets03-legendary-collection-series-li">
+  <input type="checkbox" id="m-websitedocssets03-legendary-collection-series-check"/>
+  <label for="m-websitedocssets03-legendary-collection-series-check"><a href="/website/docs/sets/03-legendary-collection-series/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets03-legendary-collection-series"><span class="">Legendary Collection Series</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets03-legendary-collection-series01-legendary-collection-li">
+  <input type="checkbox" id="m-websitedocssets03-legendary-collection-series01-legendary-collection-check"/>
+  <label for="m-websitedocssets03-legendary-collection-series01-legendary-collection-check"><a href="/website/docs/sets/03-legendary-collection-series/01-legendary-collection/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets03-legendary-collection-series01-legendary-collection"><span class="">Legendary Collection</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocssets04-e-card-series-li">
+  <input type="checkbox" id="m-websitedocssets04-e-card-series-check"/>
+  <label for="m-websitedocssets04-e-card-series-check"><a href="/website/docs/sets/04-e-card-series/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets04-e-card-series"><span class="">e-Card Series</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets04-e-card-series01-expedition-li">
+  <input type="checkbox" id="m-websitedocssets04-e-card-series01-expedition-check"/>
+  <label for="m-websitedocssets04-e-card-series01-expedition-check"><a href="/website/docs/sets/04-e-card-series/01-expedition/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets04-e-card-series01-expedition"><span class="">Expedition Base Set</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets04-e-card-series02-aquapolis-li">
+  <input type="checkbox" id="m-websitedocssets04-e-card-series02-aquapolis-check"/>
+  <label for="m-websitedocssets04-e-card-series02-aquapolis-check"><a href="/website/docs/sets/04-e-card-series/02-aquapolis/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets04-e-card-series02-aquapolis"><span class="">Aquapolis</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets04-e-card-series03-skyridge-li">
+  <input type="checkbox" id="m-websitedocssets04-e-card-series03-skyridge-check"/>
+  <label for="m-websitedocssets04-e-card-series03-skyridge-check"><a href="/website/docs/sets/04-e-card-series/03-skyridge/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets04-e-card-series03-skyridge"><span class="">Skyridge</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocssets05-ex-series-li">
+  <input type="checkbox" id="m-websitedocssets05-ex-series-check"/>
+  <label for="m-websitedocssets05-ex-series-check"><a href="/website/docs/sets/05-ex-series/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets05-ex-series"><span class="">EX Series</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets05-ex-series01-ex-ruby-sapphire-li">
+  <input type="checkbox" id="m-websitedocssets05-ex-series01-ex-ruby-sapphire-check"/>
+  <label for="m-websitedocssets05-ex-series01-ex-ruby-sapphire-check"><a href="/website/docs/sets/05-ex-series/01-ex-ruby-sapphire/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets05-ex-series01-ex-ruby-sapphire"><span class="">EX Ruby &amp; Sapphire</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets05-ex-series02-ex-sandstorm-li">
+  <input type="checkbox" id="m-websitedocssets05-ex-series02-ex-sandstorm-check"/>
+  <label for="m-websitedocssets05-ex-series02-ex-sandstorm-check"><a href="/website/docs/sets/05-ex-series/02-ex-sandstorm/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets05-ex-series02-ex-sandstorm"><span class="">EX Sandstorm</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets05-ex-series03-ex-dragon-li">
+  <input type="checkbox" id="m-websitedocssets05-ex-series03-ex-dragon-check"/>
+  <label for="m-websitedocssets05-ex-series03-ex-dragon-check"><a href="/website/docs/sets/05-ex-series/03-ex-dragon/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets05-ex-series03-ex-dragon"><span class="">EX Dragon</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets05-ex-series04-ex-team-magma-vs-team-aqua-li">
+  <input type="checkbox" id="m-websitedocssets05-ex-series04-ex-team-magma-vs-team-aqua-check"/>
+  <label for="m-websitedocssets05-ex-series04-ex-team-magma-vs-team-aqua-check"><a href="/website/docs/sets/05-ex-series/04-ex-team-magma-vs-team-aqua/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets05-ex-series04-ex-team-magma-vs-team-aqua"><span class="">EX Team Magma vs Team Aqua</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets05-ex-series05-ex-hidden-legends-li">
+  <input type="checkbox" id="m-websitedocssets05-ex-series05-ex-hidden-legends-check"/>
+  <label for="m-websitedocssets05-ex-series05-ex-hidden-legends-check"><a href="/website/docs/sets/05-ex-series/05-ex-hidden-legends/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets05-ex-series05-ex-hidden-legends"><span class="">EX Hidden Legends</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets05-ex-series06-ex-fire-red-leaf-green-li">
+  <input type="checkbox" id="m-websitedocssets05-ex-series06-ex-fire-red-leaf-green-check"/>
+  <label for="m-websitedocssets05-ex-series06-ex-fire-red-leaf-green-check"><a href="/website/docs/sets/05-ex-series/06-ex-fire-red-leaf-green/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets05-ex-series06-ex-fire-red-leaf-green"><span class="">EX FireRed &amp; LeafGreen</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets05-ex-series07-ex-team-rocket-returns-li">
+  <input type="checkbox" id="m-websitedocssets05-ex-series07-ex-team-rocket-returns-check"/>
+  <label for="m-websitedocssets05-ex-series07-ex-team-rocket-returns-check"><a href="/website/docs/sets/05-ex-series/07-ex-team-rocket-returns/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets05-ex-series07-ex-team-rocket-returns"><span class="">EX Team Rocket Returns</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets05-ex-series08-ex-deoxys-li">
+  <input type="checkbox" id="m-websitedocssets05-ex-series08-ex-deoxys-check"/>
+  <label for="m-websitedocssets05-ex-series08-ex-deoxys-check"><a href="/website/docs/sets/05-ex-series/08-ex-deoxys/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets05-ex-series08-ex-deoxys"><span class="">EX Deoxys</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets05-ex-series09-ex-emerald-li">
+  <input type="checkbox" id="m-websitedocssets05-ex-series09-ex-emerald-check"/>
+  <label for="m-websitedocssets05-ex-series09-ex-emerald-check"><a href="/website/docs/sets/05-ex-series/09-ex-emerald/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets05-ex-series09-ex-emerald"><span class="">EX Emerald</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets05-ex-series10-ex-unseen-forces-li">
+  <input type="checkbox" id="m-websitedocssets05-ex-series10-ex-unseen-forces-check"/>
+  <label for="m-websitedocssets05-ex-series10-ex-unseen-forces-check"><a href="/website/docs/sets/05-ex-series/10-ex-unseen-forces/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets05-ex-series10-ex-unseen-forces"><span class="">EX Unseen Forces</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets05-ex-series11-ex-delta-species-li">
+  <input type="checkbox" id="m-websitedocssets05-ex-series11-ex-delta-species-check"/>
+  <label for="m-websitedocssets05-ex-series11-ex-delta-species-check"><a href="/website/docs/sets/05-ex-series/11-ex-delta-species/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets05-ex-series11-ex-delta-species"><span class="">EX Delta Species</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets05-ex-series12-ex-legend-maker-li">
+  <input type="checkbox" id="m-websitedocssets05-ex-series12-ex-legend-maker-check"/>
+  <label for="m-websitedocssets05-ex-series12-ex-legend-maker-check"><a href="/website/docs/sets/05-ex-series/12-ex-legend-maker/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets05-ex-series12-ex-legend-maker"><span class="">EX Legend Maker</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets05-ex-series13-ex-holon-phantoms-li">
+  <input type="checkbox" id="m-websitedocssets05-ex-series13-ex-holon-phantoms-check"/>
+  <label for="m-websitedocssets05-ex-series13-ex-holon-phantoms-check"><a href="/website/docs/sets/05-ex-series/13-ex-holon-phantoms/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets05-ex-series13-ex-holon-phantoms"><span class="">EX Holon Phantoms</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets05-ex-series14-ex-crystal-guardians-li">
+  <input type="checkbox" id="m-websitedocssets05-ex-series14-ex-crystal-guardians-check"/>
+  <label for="m-websitedocssets05-ex-series14-ex-crystal-guardians-check"><a href="/website/docs/sets/05-ex-series/14-ex-crystal-guardians/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets05-ex-series14-ex-crystal-guardians"><span class="">EX Crystal Guardians</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets05-ex-series15-ex-dragon-frontiers-li">
+  <input type="checkbox" id="m-websitedocssets05-ex-series15-ex-dragon-frontiers-check"/>
+  <label for="m-websitedocssets05-ex-series15-ex-dragon-frontiers-check"><a href="/website/docs/sets/05-ex-series/15-ex-dragon-frontiers/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets05-ex-series15-ex-dragon-frontiers"><span class="">EX Dragon Frontiers</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets05-ex-series16-ex-power-keepers-li">
+  <input type="checkbox" id="m-websitedocssets05-ex-series16-ex-power-keepers-check"/>
+  <label for="m-websitedocssets05-ex-series16-ex-power-keepers-check"><a href="/website/docs/sets/05-ex-series/16-ex-power-keepers/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets05-ex-series16-ex-power-keepers"><span class="">EX Power Keepers</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocssets06-diamond-pearl-series-li">
+  <input type="checkbox" id="m-websitedocssets06-diamond-pearl-series-check"/>
+  <label for="m-websitedocssets06-diamond-pearl-series-check"><a href="/website/docs/sets/06-diamond-pearl-series/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets06-diamond-pearl-series"><span class="">Diamond &amp; Pearl Series</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets06-diamond-pearl-series01-diamond-pearl-base-set--li">
+  <input type="checkbox" id="m-websitedocssets06-diamond-pearl-series01-diamond-pearl-base-set--check"/>
+  <label for="m-websitedocssets06-diamond-pearl-series01-diamond-pearl-base-set--check"><a href="/website/docs/sets/06-diamond-pearl-series/01-diamond-pearl-base-set-/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets06-diamond-pearl-series01-diamond-pearl-base-set-"><span class="">Diamond &amp; Pearl</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets06-diamond-pearl-series02-diamond-pearl-mysterious-treasures-li">
+  <input type="checkbox" id="m-websitedocssets06-diamond-pearl-series02-diamond-pearl-mysterious-treasures-check"/>
+  <label for="m-websitedocssets06-diamond-pearl-series02-diamond-pearl-mysterious-treasures-check"><a href="/website/docs/sets/06-diamond-pearl-series/02-diamond-pearl-mysterious-treasures/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets06-diamond-pearl-series02-diamond-pearl-mysterious-treasures"><span class="">Mysterious Treasures</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets06-diamond-pearl-series03-diamond-pearl-secret-wonders-li">
+  <input type="checkbox" id="m-websitedocssets06-diamond-pearl-series03-diamond-pearl-secret-wonders-check"/>
+  <label for="m-websitedocssets06-diamond-pearl-series03-diamond-pearl-secret-wonders-check"><a href="/website/docs/sets/06-diamond-pearl-series/03-diamond-pearl-secret-wonders/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets06-diamond-pearl-series03-diamond-pearl-secret-wonders"><span class="">Secret Wonders</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets06-diamond-pearl-series04-diamond-pearl-great-encounters-li">
+  <input type="checkbox" id="m-websitedocssets06-diamond-pearl-series04-diamond-pearl-great-encounters-check"/>
+  <label for="m-websitedocssets06-diamond-pearl-series04-diamond-pearl-great-encounters-check"><a href="/website/docs/sets/06-diamond-pearl-series/04-diamond-pearl-great-encounters/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets06-diamond-pearl-series04-diamond-pearl-great-encounters"><span class="">Great Encounters</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets06-diamond-pearl-series05-diamond-pearl-majestic-dawn-li">
+  <input type="checkbox" id="m-websitedocssets06-diamond-pearl-series05-diamond-pearl-majestic-dawn-check"/>
+  <label for="m-websitedocssets06-diamond-pearl-series05-diamond-pearl-majestic-dawn-check"><a href="/website/docs/sets/06-diamond-pearl-series/05-diamond-pearl-majestic-dawn/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets06-diamond-pearl-series05-diamond-pearl-majestic-dawn"><span class="">Majestic Dawn</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets06-diamond-pearl-series06-diamond-pearl-legends-awakened-li">
+  <input type="checkbox" id="m-websitedocssets06-diamond-pearl-series06-diamond-pearl-legends-awakened-check"/>
+  <label for="m-websitedocssets06-diamond-pearl-series06-diamond-pearl-legends-awakened-check"><a href="/website/docs/sets/06-diamond-pearl-series/06-diamond-pearl-legends-awakened/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets06-diamond-pearl-series06-diamond-pearl-legends-awakened"><span class="">Legends Awakened</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets06-diamond-pearl-series07-diamond-pearl-stormfront-li">
+  <input type="checkbox" id="m-websitedocssets06-diamond-pearl-series07-diamond-pearl-stormfront-check"/>
+  <label for="m-websitedocssets06-diamond-pearl-series07-diamond-pearl-stormfront-check"><a href="/website/docs/sets/06-diamond-pearl-series/07-diamond-pearl-stormfront/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets06-diamond-pearl-series07-diamond-pearl-stormfront"><span class="">Stormfront</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocssets07-platinum-series-li">
+  <input type="checkbox" id="m-websitedocssets07-platinum-series-check"/>
+  <label for="m-websitedocssets07-platinum-series-check"><a href="/website/docs/sets/07-platinum-series/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets07-platinum-series"><span class="">Platinum Series</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets07-platinum-series01-platinum-base-set--li">
+  <input type="checkbox" id="m-websitedocssets07-platinum-series01-platinum-base-set--check"/>
+  <label for="m-websitedocssets07-platinum-series01-platinum-base-set--check"><a href="/website/docs/sets/07-platinum-series/01-platinum-base-set-/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets07-platinum-series01-platinum-base-set-"><span class="">Platinum</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets07-platinum-series02-platinum-rising-rivals-li">
+  <input type="checkbox" id="m-websitedocssets07-platinum-series02-platinum-rising-rivals-check"/>
+  <label for="m-websitedocssets07-platinum-series02-platinum-rising-rivals-check"><a href="/website/docs/sets/07-platinum-series/02-platinum-rising-rivals/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets07-platinum-series02-platinum-rising-rivals"><span class="">Rising Rivals</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets07-platinum-series03-platinum-supreme-victors-li">
+  <input type="checkbox" id="m-websitedocssets07-platinum-series03-platinum-supreme-victors-check"/>
+  <label for="m-websitedocssets07-platinum-series03-platinum-supreme-victors-check"><a href="/website/docs/sets/07-platinum-series/03-platinum-supreme-victors/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets07-platinum-series03-platinum-supreme-victors"><span class="">Supreme Victors</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets07-platinum-series04-platinum-arceus-li">
+  <input type="checkbox" id="m-websitedocssets07-platinum-series04-platinum-arceus-check"/>
+  <label for="m-websitedocssets07-platinum-series04-platinum-arceus-check"><a href="/website/docs/sets/07-platinum-series/04-platinum-arceus/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets07-platinum-series04-platinum-arceus"><span class="">Arceus</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocssets08-heartgold-soulsilver-series-li">
+  <input type="checkbox" id="m-websitedocssets08-heartgold-soulsilver-series-check"/>
+  <label for="m-websitedocssets08-heartgold-soulsilver-series-check"><a href="/website/docs/sets/08-heartgold-soulsilver-series/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets08-heartgold-soulsilver-series"><span class="">HeartGold &amp; SoulSilver Series</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets08-heartgold-soulsilver-series01-heart-gold-soul-silver-base-set--li">
+  <input type="checkbox" id="m-websitedocssets08-heartgold-soulsilver-series01-heart-gold-soul-silver-base-set--check"/>
+  <label for="m-websitedocssets08-heartgold-soulsilver-series01-heart-gold-soul-silver-base-set--check"><a href="/website/docs/sets/08-heartgold-soulsilver-series/01-heart-gold-soul-silver-base-set-/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets08-heartgold-soulsilver-series01-heart-gold-soul-silver-base-set-"><span class="">HeartGold &amp; SoulSilver</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets08-heartgold-soulsilver-series02-hgss-unleashed-li">
+  <input type="checkbox" id="m-websitedocssets08-heartgold-soulsilver-series02-hgss-unleashed-check"/>
+  <label for="m-websitedocssets08-heartgold-soulsilver-series02-hgss-unleashed-check"><a href="/website/docs/sets/08-heartgold-soulsilver-series/02-hgss-unleashed/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets08-heartgold-soulsilver-series02-hgss-unleashed"><span class="">Unleashed</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets08-heartgold-soulsilver-series03-hgss-undaunted-li">
+  <input type="checkbox" id="m-websitedocssets08-heartgold-soulsilver-series03-hgss-undaunted-check"/>
+  <label for="m-websitedocssets08-heartgold-soulsilver-series03-hgss-undaunted-check"><a href="/website/docs/sets/08-heartgold-soulsilver-series/03-hgss-undaunted/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets08-heartgold-soulsilver-series03-hgss-undaunted"><span class="">Undaunted</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets08-heartgold-soulsilver-series04-hgss-triumphant-li">
+  <input type="checkbox" id="m-websitedocssets08-heartgold-soulsilver-series04-hgss-triumphant-check"/>
+  <label for="m-websitedocssets08-heartgold-soulsilver-series04-hgss-triumphant-check"><a href="/website/docs/sets/08-heartgold-soulsilver-series/04-hgss-triumphant/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets08-heartgold-soulsilver-series04-hgss-triumphant"><span class="">Triumphant</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocssets09-call-of-legends-series-li">
+  <input type="checkbox" id="m-websitedocssets09-call-of-legends-series-check"/>
+  <label for="m-websitedocssets09-call-of-legends-series-check"><a href="/website/docs/sets/09-call-of-legends-series/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets09-call-of-legends-series"><span class="">Call of Legends Series</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets09-call-of-legends-series01-call-of-legends-li">
+  <input type="checkbox" id="m-websitedocssets09-call-of-legends-series01-call-of-legends-check"/>
+  <label for="m-websitedocssets09-call-of-legends-series01-call-of-legends-check"><a href="/website/docs/sets/09-call-of-legends-series/01-call-of-legends/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets09-call-of-legends-series01-call-of-legends"><span class="">Call of Legends</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocssets10-black-white-series-li">
+  <input type="checkbox" id="m-websitedocssets10-black-white-series-check"/>
+  <label for="m-websitedocssets10-black-white-series-check"><a href="/website/docs/sets/10-black-white-series/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets10-black-white-series"><span class="">Black &amp; White Series</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets10-black-white-series01-black-white-1-base-set--li">
+  <input type="checkbox" id="m-websitedocssets10-black-white-series01-black-white-1-base-set--check"/>
+  <label for="m-websitedocssets10-black-white-series01-black-white-1-base-set--check"><a href="/website/docs/sets/10-black-white-series/01-black-white-1-base-set-/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets10-black-white-series01-black-white-1-base-set-"><span class="">Black &amp; White</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets10-black-white-series02-black-white-2-emerging-powers-li">
+  <input type="checkbox" id="m-websitedocssets10-black-white-series02-black-white-2-emerging-powers-check"/>
+  <label for="m-websitedocssets10-black-white-series02-black-white-2-emerging-powers-check"><a href="/website/docs/sets/10-black-white-series/02-black-white-2-emerging-powers/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets10-black-white-series02-black-white-2-emerging-powers"><span class="">Emerging Powers</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets10-black-white-series03-black-white-3-noble-victories-li">
+  <input type="checkbox" id="m-websitedocssets10-black-white-series03-black-white-3-noble-victories-check"/>
+  <label for="m-websitedocssets10-black-white-series03-black-white-3-noble-victories-check"><a href="/website/docs/sets/10-black-white-series/03-black-white-3-noble-victories/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets10-black-white-series03-black-white-3-noble-victories"><span class="">Noble Victories</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets10-black-white-series04-black-white-4-next-destinies-li">
+  <input type="checkbox" id="m-websitedocssets10-black-white-series04-black-white-4-next-destinies-check"/>
+  <label for="m-websitedocssets10-black-white-series04-black-white-4-next-destinies-check"><a href="/website/docs/sets/10-black-white-series/04-black-white-4-next-destinies/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets10-black-white-series04-black-white-4-next-destinies"><span class="">Next Destinies</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets10-black-white-series05-black-white-5-dark-explorers-li">
+  <input type="checkbox" id="m-websitedocssets10-black-white-series05-black-white-5-dark-explorers-check"/>
+  <label for="m-websitedocssets10-black-white-series05-black-white-5-dark-explorers-check"><a href="/website/docs/sets/10-black-white-series/05-black-white-5-dark-explorers/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets10-black-white-series05-black-white-5-dark-explorers"><span class="">Dark Explorers</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets10-black-white-series06-black-white-6-dragons-exalted-li">
+  <input type="checkbox" id="m-websitedocssets10-black-white-series06-black-white-6-dragons-exalted-check"/>
+  <label for="m-websitedocssets10-black-white-series06-black-white-6-dragons-exalted-check"><a href="/website/docs/sets/10-black-white-series/06-black-white-6-dragons-exalted/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets10-black-white-series06-black-white-6-dragons-exalted"><span class="">Dragons Exalted</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets10-black-white-series07-dragon-vault-li">
+  <input type="checkbox" id="m-websitedocssets10-black-white-series07-dragon-vault-check"/>
+  <label for="m-websitedocssets10-black-white-series07-dragon-vault-check"><a href="/website/docs/sets/10-black-white-series/07-dragon-vault/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets10-black-white-series07-dragon-vault"><span class="">Dragon Vault</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets10-black-white-series08-black-white-7-boundaries-crossed-li">
+  <input type="checkbox" id="m-websitedocssets10-black-white-series08-black-white-7-boundaries-crossed-check"/>
+  <label for="m-websitedocssets10-black-white-series08-black-white-7-boundaries-crossed-check"><a href="/website/docs/sets/10-black-white-series/08-black-white-7-boundaries-crossed/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets10-black-white-series08-black-white-7-boundaries-crossed"><span class="">Boundaries Crossed</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets10-black-white-series09-black-white-8-plasma-storm-li">
+  <input type="checkbox" id="m-websitedocssets10-black-white-series09-black-white-8-plasma-storm-check"/>
+  <label for="m-websitedocssets10-black-white-series09-black-white-8-plasma-storm-check"><a href="/website/docs/sets/10-black-white-series/09-black-white-8-plasma-storm/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets10-black-white-series09-black-white-8-plasma-storm"><span class="">Plasma Storm</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets10-black-white-series10-black-white-9-plasma-freeze-li">
+  <input type="checkbox" id="m-websitedocssets10-black-white-series10-black-white-9-plasma-freeze-check"/>
+  <label for="m-websitedocssets10-black-white-series10-black-white-9-plasma-freeze-check"><a href="/website/docs/sets/10-black-white-series/10-black-white-9-plasma-freeze/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets10-black-white-series10-black-white-9-plasma-freeze"><span class="">Plasma Freeze</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets10-black-white-series11-black-white-10-plasma-blast-li">
+  <input type="checkbox" id="m-websitedocssets10-black-white-series11-black-white-10-plasma-blast-check"/>
+  <label for="m-websitedocssets10-black-white-series11-black-white-10-plasma-blast-check"><a href="/website/docs/sets/10-black-white-series/11-black-white-10-plasma-blast/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets10-black-white-series11-black-white-10-plasma-blast"><span class="">Plasma Blast</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets10-black-white-series12-black-white-11-legendary-treasures-li">
+  <input type="checkbox" id="m-websitedocssets10-black-white-series12-black-white-11-legendary-treasures-check"/>
+  <label for="m-websitedocssets10-black-white-series12-black-white-11-legendary-treasures-check"><a href="/website/docs/sets/10-black-white-series/12-black-white-11-legendary-treasures/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets10-black-white-series12-black-white-11-legendary-treasures"><span class="">Legendary Treasures</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocssets11-xy-series-li">
+  <input type="checkbox" id="m-websitedocssets11-xy-series-check"/>
+  <label for="m-websitedocssets11-xy-series-check"><a href="/website/docs/sets/11-xy-series/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets11-xy-series"><span class="">XY Series</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets11-xy-series01-xy-kalos-starter-sets-li">
+  <input type="checkbox" id="m-websitedocssets11-xy-series01-xy-kalos-starter-sets-check"/>
+  <label for="m-websitedocssets11-xy-series01-xy-kalos-starter-sets-check"><a href="/website/docs/sets/11-xy-series/01-xy-kalos-starter-sets/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets11-xy-series01-xy-kalos-starter-sets"><span class="">Kalos Starter Set</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets11-xy-series02-xy-base-set--li">
+  <input type="checkbox" id="m-websitedocssets11-xy-series02-xy-base-set--check"/>
+  <label for="m-websitedocssets11-xy-series02-xy-base-set--check"><a href="/website/docs/sets/11-xy-series/02-xy-base-set-/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets11-xy-series02-xy-base-set-"><span class="">XY</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets11-xy-series03-xy-flashfire-li">
+  <input type="checkbox" id="m-websitedocssets11-xy-series03-xy-flashfire-check"/>
+  <label for="m-websitedocssets11-xy-series03-xy-flashfire-check"><a href="/website/docs/sets/11-xy-series/03-xy-flashfire/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets11-xy-series03-xy-flashfire"><span class="">Flashfire</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets11-xy-series04-xy-furious-fists-li">
+  <input type="checkbox" id="m-websitedocssets11-xy-series04-xy-furious-fists-check"/>
+  <label for="m-websitedocssets11-xy-series04-xy-furious-fists-check"><a href="/website/docs/sets/11-xy-series/04-xy-furious-fists/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets11-xy-series04-xy-furious-fists"><span class="">Furious Fists</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets11-xy-series05-xy-phantom-forces-li">
+  <input type="checkbox" id="m-websitedocssets11-xy-series05-xy-phantom-forces-check"/>
+  <label for="m-websitedocssets11-xy-series05-xy-phantom-forces-check"><a href="/website/docs/sets/11-xy-series/05-xy-phantom-forces/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets11-xy-series05-xy-phantom-forces"><span class="">Phantom Forces</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets11-xy-series06-xy-primal-clash-li">
+  <input type="checkbox" id="m-websitedocssets11-xy-series06-xy-primal-clash-check"/>
+  <label for="m-websitedocssets11-xy-series06-xy-primal-clash-check"><a href="/website/docs/sets/11-xy-series/06-xy-primal-clash/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets11-xy-series06-xy-primal-clash"><span class="">Primal Clash</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets11-xy-series07-double-crisis-rival-ambitions-team-aqua-vs-team-magma-li">
+  <input type="checkbox" id="m-websitedocssets11-xy-series07-double-crisis-rival-ambitions-team-aqua-vs-team-magma-check"/>
+  <label for="m-websitedocssets11-xy-series07-double-crisis-rival-ambitions-team-aqua-vs-team-magma-check"><a href="/website/docs/sets/11-xy-series/07-double-crisis-rival-ambitions-team-aqua-vs-team-magma/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets11-xy-series07-double-crisis-rival-ambitions-team-aqua-vs-team-magma"><span class="">Double Crisis</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets11-xy-series08-xy-roaring-skies-li">
+  <input type="checkbox" id="m-websitedocssets11-xy-series08-xy-roaring-skies-check"/>
+  <label for="m-websitedocssets11-xy-series08-xy-roaring-skies-check"><a href="/website/docs/sets/11-xy-series/08-xy-roaring-skies/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets11-xy-series08-xy-roaring-skies"><span class="">Roaring Skies</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets11-xy-series09-xy-ancient-origins-li">
+  <input type="checkbox" id="m-websitedocssets11-xy-series09-xy-ancient-origins-check"/>
+  <label for="m-websitedocssets11-xy-series09-xy-ancient-origins-check"><a href="/website/docs/sets/11-xy-series/09-xy-ancient-origins/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets11-xy-series09-xy-ancient-origins"><span class="">Ancient Origins</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets11-xy-series10-xy-breakthrough-li">
+  <input type="checkbox" id="m-websitedocssets11-xy-series10-xy-breakthrough-check"/>
+  <label for="m-websitedocssets11-xy-series10-xy-breakthrough-check"><a href="/website/docs/sets/11-xy-series/10-xy-breakthrough/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets11-xy-series10-xy-breakthrough"><span class="">BREAKthrough</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets11-xy-series11-xy-breakpoint-li">
+  <input type="checkbox" id="m-websitedocssets11-xy-series11-xy-breakpoint-check"/>
+  <label for="m-websitedocssets11-xy-series11-xy-breakpoint-check"><a href="/website/docs/sets/11-xy-series/11-xy-breakpoint/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets11-xy-series11-xy-breakpoint"><span class="">BREAKpoint</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets11-xy-series12-generations-li">
+  <input type="checkbox" id="m-websitedocssets11-xy-series12-generations-check"/>
+  <label for="m-websitedocssets11-xy-series12-generations-check"><a href="/website/docs/sets/11-xy-series/12-generations/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets11-xy-series12-generations"><span class="">Generations</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets11-xy-series13-xy-fates-collide-li">
+  <input type="checkbox" id="m-websitedocssets11-xy-series13-xy-fates-collide-check"/>
+  <label for="m-websitedocssets11-xy-series13-xy-fates-collide-check"><a href="/website/docs/sets/11-xy-series/13-xy-fates-collide/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets11-xy-series13-xy-fates-collide"><span class="">Fates Collide</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets11-xy-series14-xy-steam-siege-li">
+  <input type="checkbox" id="m-websitedocssets11-xy-series14-xy-steam-siege-check"/>
+  <label for="m-websitedocssets11-xy-series14-xy-steam-siege-check"><a href="/website/docs/sets/11-xy-series/14-xy-steam-siege/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets11-xy-series14-xy-steam-siege"><span class="">Steam Siege</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets11-xy-series15-xy-evolutions-li">
+  <input type="checkbox" id="m-websitedocssets11-xy-series15-xy-evolutions-check"/>
+  <label for="m-websitedocssets11-xy-series15-xy-evolutions-check"><a href="/website/docs/sets/11-xy-series/15-xy-evolutions/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets11-xy-series15-xy-evolutions"><span class="">Evolutions</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocssets12-sun-moon-series-li">
+  <input type="checkbox" id="m-websitedocssets12-sun-moon-series-check"/>
+  <label for="m-websitedocssets12-sun-moon-series-check"><a href="/website/docs/sets/12-sun-moon-series/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets12-sun-moon-series"><span class="">Sun &amp; Moon Series</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets12-sun-moon-series01-sun-moon-base-set-li">
+  <input type="checkbox" id="m-websitedocssets12-sun-moon-series01-sun-moon-base-set-check"/>
+  <label for="m-websitedocssets12-sun-moon-series01-sun-moon-base-set-check"><a href="/website/docs/sets/12-sun-moon-series/01-sun-moon-base-set/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets12-sun-moon-series01-sun-moon-base-set"><span class="">Sun &amp; Moon</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets12-sun-moon-series02-sun-moon-guardians-rising-li">
+  <input type="checkbox" id="m-websitedocssets12-sun-moon-series02-sun-moon-guardians-rising-check"/>
+  <label for="m-websitedocssets12-sun-moon-series02-sun-moon-guardians-rising-check"><a href="/website/docs/sets/12-sun-moon-series/02-sun-moon-guardians-rising/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets12-sun-moon-series02-sun-moon-guardians-rising"><span class="">Guardians Rising</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets12-sun-moon-series03-sun-moon-burning-shadows-li">
+  <input type="checkbox" id="m-websitedocssets12-sun-moon-series03-sun-moon-burning-shadows-check"/>
+  <label for="m-websitedocssets12-sun-moon-series03-sun-moon-burning-shadows-check"><a href="/website/docs/sets/12-sun-moon-series/03-sun-moon-burning-shadows/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets12-sun-moon-series03-sun-moon-burning-shadows"><span class="">Burning Shadows</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets12-sun-moon-series04-shining-legends-li">
+  <input type="checkbox" id="m-websitedocssets12-sun-moon-series04-shining-legends-check"/>
+  <label for="m-websitedocssets12-sun-moon-series04-shining-legends-check"><a href="/website/docs/sets/12-sun-moon-series/04-shining-legends/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets12-sun-moon-series04-shining-legends"><span class="">Shining Legends</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets12-sun-moon-series05-sun-moon-crimson-invasion-li">
+  <input type="checkbox" id="m-websitedocssets12-sun-moon-series05-sun-moon-crimson-invasion-check"/>
+  <label for="m-websitedocssets12-sun-moon-series05-sun-moon-crimson-invasion-check"><a href="/website/docs/sets/12-sun-moon-series/05-sun-moon-crimson-invasion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets12-sun-moon-series05-sun-moon-crimson-invasion"><span class="">Crimson Invasion</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets12-sun-moon-series06-sun-moon-ultra-prism-li">
+  <input type="checkbox" id="m-websitedocssets12-sun-moon-series06-sun-moon-ultra-prism-check"/>
+  <label for="m-websitedocssets12-sun-moon-series06-sun-moon-ultra-prism-check"><a href="/website/docs/sets/12-sun-moon-series/06-sun-moon-ultra-prism/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets12-sun-moon-series06-sun-moon-ultra-prism"><span class="">Ultra Prism</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets12-sun-moon-series07-sun-moon-forbidden-light-li">
+  <input type="checkbox" id="m-websitedocssets12-sun-moon-series07-sun-moon-forbidden-light-check"/>
+  <label for="m-websitedocssets12-sun-moon-series07-sun-moon-forbidden-light-check"><a href="/website/docs/sets/12-sun-moon-series/07-sun-moon-forbidden-light/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets12-sun-moon-series07-sun-moon-forbidden-light"><span class="">Forbidden Light</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets12-sun-moon-series08-sun-moon-celestial-storm-li">
+  <input type="checkbox" id="m-websitedocssets12-sun-moon-series08-sun-moon-celestial-storm-check"/>
+  <label for="m-websitedocssets12-sun-moon-series08-sun-moon-celestial-storm-check"><a href="/website/docs/sets/12-sun-moon-series/08-sun-moon-celestial-storm/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets12-sun-moon-series08-sun-moon-celestial-storm"><span class="">Celestial Storm</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets12-sun-moon-series09-sun-moon-dragon-majesty-li">
+  <input type="checkbox" id="m-websitedocssets12-sun-moon-series09-sun-moon-dragon-majesty-check"/>
+  <label for="m-websitedocssets12-sun-moon-series09-sun-moon-dragon-majesty-check"><a href="/website/docs/sets/12-sun-moon-series/09-sun-moon-dragon-majesty/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets12-sun-moon-series09-sun-moon-dragon-majesty"><span class="">Dragon Majesty</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets12-sun-moon-series10-sun-moon-lost-thunder-li">
+  <input type="checkbox" id="m-websitedocssets12-sun-moon-series10-sun-moon-lost-thunder-check"/>
+  <label for="m-websitedocssets12-sun-moon-series10-sun-moon-lost-thunder-check"><a href="/website/docs/sets/12-sun-moon-series/10-sun-moon-lost-thunder/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets12-sun-moon-series10-sun-moon-lost-thunder"><span class="">Lost Thunder</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets12-sun-moon-series11-sun-moon-team-up-li">
+  <input type="checkbox" id="m-websitedocssets12-sun-moon-series11-sun-moon-team-up-check"/>
+  <label for="m-websitedocssets12-sun-moon-series11-sun-moon-team-up-check"><a href="/website/docs/sets/12-sun-moon-series/11-sun-moon-team-up/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets12-sun-moon-series11-sun-moon-team-up"><span class="">Team Up</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets12-sun-moon-series12-detective-pikachu-li">
+  <input type="checkbox" id="m-websitedocssets12-sun-moon-series12-detective-pikachu-check"/>
+  <label for="m-websitedocssets12-sun-moon-series12-detective-pikachu-check"><a href="/website/docs/sets/12-sun-moon-series/12-detective-pikachu/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets12-sun-moon-series12-detective-pikachu"><span class="">Detective Pikachu</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets12-sun-moon-series13-sun-moon-unbroken-bonds-li">
+  <input type="checkbox" id="m-websitedocssets12-sun-moon-series13-sun-moon-unbroken-bonds-check"/>
+  <label for="m-websitedocssets12-sun-moon-series13-sun-moon-unbroken-bonds-check"><a href="/website/docs/sets/12-sun-moon-series/13-sun-moon-unbroken-bonds/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets12-sun-moon-series13-sun-moon-unbroken-bonds"><span class="">Unbroken Bonds</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets12-sun-moon-series14-sun-moon-unified-minds-li">
+  <input type="checkbox" id="m-websitedocssets12-sun-moon-series14-sun-moon-unified-minds-check"/>
+  <label for="m-websitedocssets12-sun-moon-series14-sun-moon-unified-minds-check"><a href="/website/docs/sets/12-sun-moon-series/14-sun-moon-unified-minds/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets12-sun-moon-series14-sun-moon-unified-minds"><span class="">Unified Minds</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets12-sun-moon-series15-hidden-fates-li">
+  <input type="checkbox" id="m-websitedocssets12-sun-moon-series15-hidden-fates-check"/>
+  <label for="m-websitedocssets12-sun-moon-series15-hidden-fates-check"><a href="/website/docs/sets/12-sun-moon-series/15-hidden-fates/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets12-sun-moon-series15-hidden-fates"><span class="">Hidden Fates</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets12-sun-moon-series16-sun-moon-cosmic-eclipse-li">
+  <input type="checkbox" id="m-websitedocssets12-sun-moon-series16-sun-moon-cosmic-eclipse-check"/>
+  <label for="m-websitedocssets12-sun-moon-series16-sun-moon-cosmic-eclipse-check"><a href="/website/docs/sets/12-sun-moon-series/16-sun-moon-cosmic-eclipse/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets12-sun-moon-series16-sun-moon-cosmic-eclipse"><span class="">Cosmic Eclipse</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocssets13-sword-shield-series-li">
+  <input type="checkbox" id="m-websitedocssets13-sword-shield-series-check"/>
+  <label for="m-websitedocssets13-sword-shield-series-check"><a href="/website/docs/sets/13-sword-shield-series/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets13-sword-shield-series"><span class="">Sword &amp; Shield Series</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets13-sword-shield-series01-sword-shield-base-set--li">
+  <input type="checkbox" id="m-websitedocssets13-sword-shield-series01-sword-shield-base-set--check"/>
+  <label for="m-websitedocssets13-sword-shield-series01-sword-shield-base-set--check"><a href="/website/docs/sets/13-sword-shield-series/01-sword-shield-base-set-/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets13-sword-shield-series01-sword-shield-base-set-"><span class="">Sword &amp; Shield</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets13-sword-shield-series02-sword-shield-rebel-clash-li">
+  <input type="checkbox" id="m-websitedocssets13-sword-shield-series02-sword-shield-rebel-clash-check"/>
+  <label for="m-websitedocssets13-sword-shield-series02-sword-shield-rebel-clash-check"><a href="/website/docs/sets/13-sword-shield-series/02-sword-shield-rebel-clash/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets13-sword-shield-series02-sword-shield-rebel-clash"><span class="">Rebel Clash</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets13-sword-shield-series03-sword-shield-darkness-ablaze-li">
+  <input type="checkbox" id="m-websitedocssets13-sword-shield-series03-sword-shield-darkness-ablaze-check"/>
+  <label for="m-websitedocssets13-sword-shield-series03-sword-shield-darkness-ablaze-check"><a href="/website/docs/sets/13-sword-shield-series/03-sword-shield-darkness-ablaze/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets13-sword-shield-series03-sword-shield-darkness-ablaze"><span class="">Darkness Ablaze</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets13-sword-shield-series04-champion-s-path-li">
+  <input type="checkbox" id="m-websitedocssets13-sword-shield-series04-champion-s-path-check"/>
+  <label for="m-websitedocssets13-sword-shield-series04-champion-s-path-check"><a href="/website/docs/sets/13-sword-shield-series/04-champion-s-path/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets13-sword-shield-series04-champion-s-path"><span class="">Champion&#39;s Path</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets13-sword-shield-series05-sword-shield-vivid-voltage-li">
+  <input type="checkbox" id="m-websitedocssets13-sword-shield-series05-sword-shield-vivid-voltage-check"/>
+  <label for="m-websitedocssets13-sword-shield-series05-sword-shield-vivid-voltage-check"><a href="/website/docs/sets/13-sword-shield-series/05-sword-shield-vivid-voltage/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets13-sword-shield-series05-sword-shield-vivid-voltage"><span class="">Vivid Voltage</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets13-sword-shield-series06-shining-fates-li">
+  <input type="checkbox" id="m-websitedocssets13-sword-shield-series06-shining-fates-check"/>
+  <label for="m-websitedocssets13-sword-shield-series06-shining-fates-check"><a href="/website/docs/sets/13-sword-shield-series/06-shining-fates/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets13-sword-shield-series06-shining-fates"><span class="">Shining Fates</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets13-sword-shield-series07-sword-shield-battle-styles-li">
+  <input type="checkbox" id="m-websitedocssets13-sword-shield-series07-sword-shield-battle-styles-check"/>
+  <label for="m-websitedocssets13-sword-shield-series07-sword-shield-battle-styles-check"><a href="/website/docs/sets/13-sword-shield-series/07-sword-shield-battle-styles/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets13-sword-shield-series07-sword-shield-battle-styles"><span class="">Battle Styles</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets13-sword-shield-series08-sword-shield-chilling-reign-li">
+  <input type="checkbox" id="m-websitedocssets13-sword-shield-series08-sword-shield-chilling-reign-check"/>
+  <label for="m-websitedocssets13-sword-shield-series08-sword-shield-chilling-reign-check"><a href="/website/docs/sets/13-sword-shield-series/08-sword-shield-chilling-reign/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets13-sword-shield-series08-sword-shield-chilling-reign"><span class="">Chilling Reign</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets13-sword-shield-series09-sword-shield-evolving-skies-li">
+  <input type="checkbox" id="m-websitedocssets13-sword-shield-series09-sword-shield-evolving-skies-check"/>
+  <label for="m-websitedocssets13-sword-shield-series09-sword-shield-evolving-skies-check"><a href="/website/docs/sets/13-sword-shield-series/09-sword-shield-evolving-skies/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets13-sword-shield-series09-sword-shield-evolving-skies"><span class="">Evolving Skies</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets13-sword-shield-series10-celebrations-li">
+  <input type="checkbox" id="m-websitedocssets13-sword-shield-series10-celebrations-check"/>
+  <label for="m-websitedocssets13-sword-shield-series10-celebrations-check"><a href="/website/docs/sets/13-sword-shield-series/10-celebrations/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets13-sword-shield-series10-celebrations"><span class="">Celebrations</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets13-sword-shield-series11-sword-shield-fusion-strike-li">
+  <input type="checkbox" id="m-websitedocssets13-sword-shield-series11-sword-shield-fusion-strike-check"/>
+  <label for="m-websitedocssets13-sword-shield-series11-sword-shield-fusion-strike-check"><a href="/website/docs/sets/13-sword-shield-series/11-sword-shield-fusion-strike/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets13-sword-shield-series11-sword-shield-fusion-strike"><span class="">Fusion Strike</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets13-sword-shield-series12-sword-shield-brilliant-stars-li">
+  <input type="checkbox" id="m-websitedocssets13-sword-shield-series12-sword-shield-brilliant-stars-check"/>
+  <label for="m-websitedocssets13-sword-shield-series12-sword-shield-brilliant-stars-check"><a href="/website/docs/sets/13-sword-shield-series/12-sword-shield-brilliant-stars/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets13-sword-shield-series12-sword-shield-brilliant-stars"><span class="">Brilliant Stars</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets13-sword-shield-series13-sword-shield-astral-radiance-li">
+  <input type="checkbox" id="m-websitedocssets13-sword-shield-series13-sword-shield-astral-radiance-check"/>
+  <label for="m-websitedocssets13-sword-shield-series13-sword-shield-astral-radiance-check"><a href="/website/docs/sets/13-sword-shield-series/13-sword-shield-astral-radiance/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets13-sword-shield-series13-sword-shield-astral-radiance"><span class="">Astral Radiance</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets13-sword-shield-series14-pokemon-go-li">
+  <input type="checkbox" id="m-websitedocssets13-sword-shield-series14-pokemon-go-check"/>
+  <label for="m-websitedocssets13-sword-shield-series14-pokemon-go-check"><a href="/website/docs/sets/13-sword-shield-series/14-pokemon-go/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets13-sword-shield-series14-pokemon-go"><span class="">Pokemon GO</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets13-sword-shield-series15-sword-shield-lost-origin-li">
+  <input type="checkbox" id="m-websitedocssets13-sword-shield-series15-sword-shield-lost-origin-check"/>
+  <label for="m-websitedocssets13-sword-shield-series15-sword-shield-lost-origin-check"><a href="/website/docs/sets/13-sword-shield-series/15-sword-shield-lost-origin/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets13-sword-shield-series15-sword-shield-lost-origin"><span class="">Lost Origin</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets13-sword-shield-series16-sword-shield-silver-tempest-li">
+  <input type="checkbox" id="m-websitedocssets13-sword-shield-series16-sword-shield-silver-tempest-check"/>
+  <label for="m-websitedocssets13-sword-shield-series16-sword-shield-silver-tempest-check"><a href="/website/docs/sets/13-sword-shield-series/16-sword-shield-silver-tempest/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets13-sword-shield-series16-sword-shield-silver-tempest"><span class="">Silver Tempest</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets13-sword-shield-series17-crown-zenith-li">
+  <input type="checkbox" id="m-websitedocssets13-sword-shield-series17-crown-zenith-check"/>
+  <label for="m-websitedocssets13-sword-shield-series17-crown-zenith-check"><a href="/website/docs/sets/13-sword-shield-series/17-crown-zenith/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets13-sword-shield-series17-crown-zenith"><span class="">Crown Zenith</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocssets14-scarlet-violet-series-li">
+  <input type="checkbox" id="m-websitedocssets14-scarlet-violet-series-check"/>
+  <label for="m-websitedocssets14-scarlet-violet-series-check"><a href="/website/docs/sets/14-scarlet-violet-series/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets14-scarlet-violet-series"><span class="">Scarlet &amp; Violet Series</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets14-scarlet-violet-series01-scarlet-violet-base-set--li">
+  <input type="checkbox" id="m-websitedocssets14-scarlet-violet-series01-scarlet-violet-base-set--check"/>
+  <label for="m-websitedocssets14-scarlet-violet-series01-scarlet-violet-base-set--check"><a href="/website/docs/sets/14-scarlet-violet-series/01-scarlet-violet-base-set-/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets14-scarlet-violet-series01-scarlet-violet-base-set-"><span class="">Scarlet &amp; Violet</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets14-scarlet-violet-series02-scarlet-violet-paldea-evolved-li">
+  <input type="checkbox" id="m-websitedocssets14-scarlet-violet-series02-scarlet-violet-paldea-evolved-check"/>
+  <label for="m-websitedocssets14-scarlet-violet-series02-scarlet-violet-paldea-evolved-check"><a href="/website/docs/sets/14-scarlet-violet-series/02-scarlet-violet-paldea-evolved/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets14-scarlet-violet-series02-scarlet-violet-paldea-evolved"><span class="">Paldea Evolved</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets14-scarlet-violet-series03-scarlet-violet-obsidian-flames-li">
+  <input type="checkbox" id="m-websitedocssets14-scarlet-violet-series03-scarlet-violet-obsidian-flames-check"/>
+  <label for="m-websitedocssets14-scarlet-violet-series03-scarlet-violet-obsidian-flames-check"><a href="/website/docs/sets/14-scarlet-violet-series/03-scarlet-violet-obsidian-flames/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets14-scarlet-violet-series03-scarlet-violet-obsidian-flames"><span class="">Obsidian Flames</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets14-scarlet-violet-series04-scarlet-violet-151-li">
+  <input type="checkbox" id="m-websitedocssets14-scarlet-violet-series04-scarlet-violet-151-check"/>
+  <label for="m-websitedocssets14-scarlet-violet-series04-scarlet-violet-151-check"><a href="/website/docs/sets/14-scarlet-violet-series/04-scarlet-violet-151/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets14-scarlet-violet-series04-scarlet-violet-151"><span class="">151</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets14-scarlet-violet-series05-scarlet-violet-paradox-rift-li">
+  <input type="checkbox" id="m-websitedocssets14-scarlet-violet-series05-scarlet-violet-paradox-rift-check"/>
+  <label for="m-websitedocssets14-scarlet-violet-series05-scarlet-violet-paradox-rift-check"><a href="/website/docs/sets/14-scarlet-violet-series/05-scarlet-violet-paradox-rift/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets14-scarlet-violet-series05-scarlet-violet-paradox-rift"><span class="">Paradox Rift</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets14-scarlet-violet-series06-scarlet-violet-paldean-fates-li">
+  <input type="checkbox" id="m-websitedocssets14-scarlet-violet-series06-scarlet-violet-paldean-fates-check"/>
+  <label for="m-websitedocssets14-scarlet-violet-series06-scarlet-violet-paldean-fates-check"><a href="/website/docs/sets/14-scarlet-violet-series/06-scarlet-violet-paldean-fates/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets14-scarlet-violet-series06-scarlet-violet-paldean-fates"><span class="">Paldean Fates</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets14-scarlet-violet-series07-scarlet-violet-temporal-forces-li">
+  <input type="checkbox" id="m-websitedocssets14-scarlet-violet-series07-scarlet-violet-temporal-forces-check"/>
+  <label for="m-websitedocssets14-scarlet-violet-series07-scarlet-violet-temporal-forces-check"><a href="/website/docs/sets/14-scarlet-violet-series/07-scarlet-violet-temporal-forces/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets14-scarlet-violet-series07-scarlet-violet-temporal-forces"><span class="">Temporal Forces</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets14-scarlet-violet-series08-scarlet-violet-twilight-masquerade-li">
+  <input type="checkbox" id="m-websitedocssets14-scarlet-violet-series08-scarlet-violet-twilight-masquerade-check"/>
+  <label for="m-websitedocssets14-scarlet-violet-series08-scarlet-violet-twilight-masquerade-check"><a href="/website/docs/sets/14-scarlet-violet-series/08-scarlet-violet-twilight-masquerade/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets14-scarlet-violet-series08-scarlet-violet-twilight-masquerade"><span class="">Twilight Masquerade</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets14-scarlet-violet-series09-scarlet-violet-shrouded-fable-li">
+  <input type="checkbox" id="m-websitedocssets14-scarlet-violet-series09-scarlet-violet-shrouded-fable-check"/>
+  <label for="m-websitedocssets14-scarlet-violet-series09-scarlet-violet-shrouded-fable-check"><a href="/website/docs/sets/14-scarlet-violet-series/09-scarlet-violet-shrouded-fable/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets14-scarlet-violet-series09-scarlet-violet-shrouded-fable"><span class="">Shrouded Fable</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets14-scarlet-violet-series10-scarlet-violet-stellar-crown-li">
+  <input type="checkbox" id="m-websitedocssets14-scarlet-violet-series10-scarlet-violet-stellar-crown-check"/>
+  <label for="m-websitedocssets14-scarlet-violet-series10-scarlet-violet-stellar-crown-check"><a href="/website/docs/sets/14-scarlet-violet-series/10-scarlet-violet-stellar-crown/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets14-scarlet-violet-series10-scarlet-violet-stellar-crown"><span class="">Stellar Crown</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocssets14-scarlet-violet-series11-scarlet-violet-surging-sparks-li">
+  <input type="checkbox" id="m-websitedocssets14-scarlet-violet-series11-scarlet-violet-surging-sparks-check"/>
+  <label for="m-websitedocssets14-scarlet-violet-series11-scarlet-violet-surging-sparks-check"><a href="/website/docs/sets/14-scarlet-violet-series/11-scarlet-violet-surging-sparks/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets14-scarlet-violet-series11-scarlet-violet-surging-sparks"><span class="">Surging Sparks</span></a></label>
   
 </li>
   </ul>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocstutorials-li">
-  <input type="checkbox" id="m-websitedocstutorials-check"/>
-  <label for="m-websitedocstutorials-check"><a href="/website/docs/tutorials/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocstutorials"><span class="">Tutorials</span></a></label>
-  
-  <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocstutorialsmulti-bear-li">
-  <input type="checkbox" id="m-websitedocstutorialsmulti-bear-check"/>
-  <label for="m-websitedocstutorialsmulti-bear-check"><a href="/website/docs/tutorials/multi-bear/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocstutorialsmulti-bear"><span class="">Multi-Bear Domicile Setup</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocstutorialstutorial2-li">
-  <input type="checkbox" id="m-websitedocstutorialstutorial2-check"/>
-  <label for="m-websitedocstutorialstutorial2-check"><a href="/website/docs/tutorials/tutorial2/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocstutorialstutorial2"><span class="">Another Tutorial</span></a></label>
-  
-</li>
-  </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocsreference-li">
-  <input type="checkbox" id="m-websitedocsreference-check"/>
-  <label for="m-websitedocsreference-check"><a href="/website/docs/reference/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocsreference"><span class="">Reference</span></a></label>
-  
-  <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsreferenceparameter-reference-li">
-  <input type="checkbox" id="m-websitedocsreferenceparameter-reference-check"/>
-  <label for="m-websitedocsreferenceparameter-reference-check"><a href="/website/docs/reference/parameter-reference/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocsreferenceparameter-reference"><span class="">Parameter Reference</span></a></label>
-  
-</li>
-  </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocscontribution-guidelines-li">
-  <input type="checkbox" id="m-websitedocscontribution-guidelines-check"/>
-  <label for="m-websitedocscontribution-guidelines-check"><a href="/website/docs/contribution-guidelines/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websitedocscontribution-guidelines"><span class="">Contribution Guidelines</span></a></label>
-  
 </li>
   </ul>
 </li>
@@ -425,32 +711,8 @@
 
 </div>
 
-            <div class="td-toc">
-        <nav id="TableOfContents">
-  <ul>
-    <li><a href="#what-is-it">What is it?</a></li>
-    <li><a href="#why-do-i-want-it">Why do I want it?</a></li>
-    <li><a href="#where-should-i-go-next">Where should I go next?</a></li>
-  </ul>
-</nav>
-      </div>
-    
-            <div class="taxonomy taxonomy-terms-cloud taxo-tags">
-      <h5 class="taxonomy-title">Tag Cloud</h5>
-      <ul class="taxonomy-terms">
-        <li><a class="taxonomy-term" href="https://irtom.github.io/website/tags/docs/" data-taxonomy-term="docs"><span class="taxonomy-label">Docs</span><span class="taxonomy-count">2</span></a></li>
-        <li><a class="taxonomy-term" href="https://irtom.github.io/website/tags/sample/" data-taxonomy-term="sample"><span class="taxonomy-label">Sample</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="https://irtom.github.io/website/tags/test/" data-taxonomy-term="test"><span class="taxonomy-label">Test</span><span class="taxonomy-count">2</span></a></li>
-        </ul>
-    </div>
-  <div class="taxonomy taxonomy-terms-cloud taxo-categories">
-      <h5 class="taxonomy-title">Categories</h5>
-      <ul class="taxonomy-terms">
-        <li><a class="taxonomy-term" href="https://irtom.github.io/website/categories/examples/" data-taxonomy-term="examples"><span class="taxonomy-label">Examples</span><span class="taxonomy-count">2</span></a></li>
-        <li><a class="taxonomy-term" href="https://irtom.github.io/website/categories/placeholders/" data-taxonomy-term="placeholders"><span class="taxonomy-label">Placeholders</span><span class="taxonomy-count">1</span></a></li>
-        </ul>
-    </div>
-  
+            
+            
 	
           </aside>
           <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
@@ -460,7 +722,7 @@
             <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
   <li class="breadcrumb-item">
-    <a href="/website/docs/">Docs</a></li>
+    <a href="/website/docs/">Monitoring</a></li>
   <li class="breadcrumb-item active" aria-current="page">
     Overview</li>
   </ol>
@@ -468,52 +730,17 @@
             
 <div class="td-content">
 	<h1>Overview</h1>
-	<div class="lead">Here&rsquo;s where your user finds out if your project is for them.</div>
+	<div class="lead">Pokemonitor</div>
 	<header class="article-meta">
 		
   </header>
 	
 
 <div class="pageinfo pageinfo-primary">
-<p>This is a placeholder page that shows you how to use this template site.</p>
+<p>Pokemonitor</p>
 
 </div>
 
-<p>The Overview is where your users find out about your project. Depending on the
-size of your docset, you can have a separate overview page (like this one) or
-put your overview contents in the Documentation landing page (like in the Docsy
-User Guide).</p>
-<p>Try answering these questions for your user in this page:</p>
-<h2 id="what-is-it">What is it?<a class="td-heading-self-link" href="#what-is-it" aria-label="Heading self-link"></a></h2>
-<p>Introduce your project, including what it does or lets you do, why you would use
-it, and its primary goal (and how it achieves it). This should be similar to
-your README description, though you can go into a little more detail here if you
-want.</p>
-<h2 id="why-do-i-want-it">Why do I want it?<a class="td-heading-self-link" href="#why-do-i-want-it" aria-label="Heading self-link"></a></h2>
-<p>Help your user know if your project will help them. Useful information can
-include:</p>
-<ul>
-<li>
-<p><strong>What is it good for?</strong>: What types of problems does your project solve? What
-are the benefits of using it?</p>
-</li>
-<li>
-<p><strong>What is it not good for?</strong>: For example, point out situations that might
-intuitively seem suited for your project, but aren&rsquo;t for some reason. Also
-mention known limitations, scaling issues, or anything else that might let
-your users know if the project is not for them.</p>
-</li>
-<li>
-<p><strong>What is it <em>not yet</em> good for?</strong>: Highlight any useful features that are
-coming soon.</p>
-</li>
-</ul>
-<h2 id="where-should-i-go-next">Where should I go next?<a class="td-heading-self-link" href="#where-should-i-go-next" aria-label="Heading self-link"></a></h2>
-<p>Give your users next steps from the Overview. For example:</p>
-<ul>
-<li><a href="/website/docs/getting-started/">Getting Started</a>: Get started with $project</li>
-<li><a href="/website/docs/examples/">Examples</a>: Check out some example code!</li>
-</ul>
 
 	<style>
   .feedback--answer {
@@ -640,7 +867,7 @@ coming soon.</p>
 </footer>
 
     </div>
-    <script src="/website/js/main.min.7d51f248907905d01092a765a174599ca0f87d0d4c700e1c0c2b08108bd6b5e6.js" integrity="sha256-fVHySJB5BdAQkqdloXRZnKD4fQ1McA4cDCsIEIvWteY=" crossorigin="anonymous"></script>
+    <script src="/website/js/main.min.69e2c1ae9320465ab10236d9ef752c6a4442c54b48b883b17c497b7c7d96a796.js" integrity="sha256-aeLBrpMgRlqxAjbZ73UsakRCxUtIuIOxfEl7fH2Wp5Y=" crossorigin="anonymous"></script>
 <script defer src="/website/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
 <script src='/website/js/tabpane-persist.js'></script>
 
