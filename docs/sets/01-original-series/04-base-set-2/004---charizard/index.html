@@ -1,9 +1,9 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head>
+  <head><script src="/website/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=website/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 
 
 <link rel="shortcut icon" href="/website/favicons/favicon.ico" >
@@ -20,7 +20,7 @@
 <title>004/130 - Charizard | Pokémonitor</title>
 <meta name="description" content="4/130 - Charizard - Holo Rare
 ">
-<meta property="og:url" content="https://irtom.github.io/website/docs/sets/01-original-series/04-base-set-2/004---charizard/">
+<meta property="og:url" content="http://localhost:1313/website/docs/sets/01-original-series/04-base-set-2/004---charizard/">
   <meta property="og:site_name" content="Pokémonitor">
   <meta property="og:title" content="004/130 - Charizard">
   <meta property="og:description" content="4/130 - Charizard - Holo Rare">
@@ -28,17 +28,17 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2017-01-05T00:00:00+00:00">
-    <meta property="article:modified_time" content="2017-01-05T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-16T22:33:05+02:00">
 
   <meta itemprop="name" content="004/130 - Charizard">
   <meta itemprop="description" content="4/130 - Charizard - Holo Rare">
   <meta itemprop="datePublished" content="2017-01-05T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2017-01-05T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-10-16T22:33:05+02:00">
   <meta itemprop="wordCount" content="12">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="004/130 - Charizard">
   <meta name="twitter:description" content="4/130 - Charizard - Holo Rare">
-<link rel="preload" href="/website/scss/main.min.e27e9dbace77e637983a3900590da42ddfc471da09131ef565f7ea5853a1205a.css" as="style"><link href="/website/scss/main.min.e27e9dbace77e637983a3900590da42ddfc471da09131ef565f7ea5853a1205a.css" rel="stylesheet">
+<link href="/website/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -77,7 +77,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/website/offline-search-index.c25635254f94ca267458fa76329c2a9a.json"
+    data-offline-search-index-json-src="/website/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -101,7 +101,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/website/offline-search-index.c25635254f94ca267458fa76329c2a9a.json"
+    data-offline-search-index-json-src="/website/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -768,10 +768,6 @@
 <!-- Chart code -->
 <script>
 am5.ready(function() {
-
-// Create root element
-// -------------------------------------------------------------------------------
-// https://www.amcharts.com/docs/v5/getting-started/#Root_element
 var root = am5.Root.new("chartdiv");
 
 const myTheme = am5.Theme.new(root);
@@ -785,33 +781,18 @@ root.setThemes([
   myTheme
 ]);
 
-// Create a stock chart
-// -------------------------------------------------------------------------------
-// https://www.amcharts.com/docs/v5/charts/stock/#Instantiating_the_chart
 var stockChart = root.container.children.push(am5stock.StockChart.new(root, {  
   paddingRight: 0
 }));
 
-
-// Set global number format
-// -------------------------------------------------------------------------------
-// https://www.amcharts.com/docs/v5/concepts/formatters/formatting-numbers/
 root.numberFormatter.set("numberFormat", "#,###.00");
 
-
-// Create a main stock panel (chart)
-// -------------------------------------------------------------------------------
-// https://www.amcharts.com/docs/v5/charts/stock/#Adding_panels
 var mainPanel = stockChart.panels.push(am5stock.StockPanel.new(root, {
   wheelY: "zoomX",
   panX: true,
   panY: true
 }));
 
-
-// Create value axis
-// -------------------------------------------------------------------------------
-// https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
 var valueAxis = mainPanel.yAxes.push(am5xy.ValueAxis.new(root, {
   renderer: am5xy.AxisRendererY.new(root, {
     pan: "zoom"
@@ -833,97 +814,23 @@ var dateAxis = mainPanel.xAxes.push(am5xy.GaplessDateAxis.new(root, {
   tooltip: am5.Tooltip.new(root, {})
 }));
 
-
-// Add series
-// -------------------------------------------------------------------------------
-// https://www.amcharts.com/docs/v5/charts/xy-chart/series/
 var valueSeries = mainPanel.series.push(am5xy.SmoothedXLineSeries.new(root, {
   name: "Price",
-  //clustered: false,
   valueXField: "Date",
   valueYField: "Close",
-  //highValueYField: "High",
-  //lowValueYField: "Low",
-  //openValueYField: "Open",
-  //calculateAggregates: true,
   xAxis: dateAxis,
   yAxis: valueAxis,
-  legendValueText: "[bold]{valueY}",      //"open: [bold]{openValueY}", [/] high: [bold]{highValueY}[/] low: [bold]{lowValueY}[/] close: [bold]{valueY}[/]",
+  legendValueText: "[bold]{valueY}",
   legendRangeValueText: ""
 }));
 
-
-// Set main value series
-// -------------------------------------------------------------------------------
-// https://www.amcharts.com/docs/v5/charts/stock/#Setting_main_series
 stockChart.set("stockSeries", valueSeries);
 
-
-// Add a stock legend
-// -------------------------------------------------------------------------------
-// https://www.amcharts.com/docs/v5/charts/stock/stock-legend/
 var valueLegend = mainPanel.plotContainer.children.push(am5stock.StockLegend.new(root, {
   stockChart: stockChart
 }));
 valueLegend.settingsButtons.template.set("forceHidden", true);
 
-
-// Create volume axis
-// -------------------------------------------------------------------------------
-// https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
-//var volumeAxisRenderer = am5xy.AxisRendererY.new(root, {
-//  inside: true,
-//  pan: "zoom"
-//});
-
-//volumeAxisRenderer.labels.template.set("forceHidden", true);
-//volumeAxisRenderer.grid.template.set("forceHidden", true);
-
-//var volumeValueAxis = mainPanel.yAxes.push(am5xy.ValueAxis.new(root, {
-//  numberFormat: "#.#a",
-//  height: am5.percent(20),
-//  y: am5.percent(100),
-//  centerY: am5.percent(100),
-//  renderer: volumeAxisRenderer
-//}));
-
-// Add series
-// https://www.amcharts.com/docs/v5/charts/xy-chart/series/
-//var volumeSeries = mainPanel.series.push(am5xy.ColumnSeries.new(root, {
-//  name: "Volume",
-//  clustered: false,
-//  valueXField: "Date",
-//  valueYField: "Volume",
-//  xAxis: dateAxis,
-//  yAxis: volumeValueAxis,
-//  legendValueText: "[bold]{valueY.formatNumber('#,###.0a')}[/]"
-//}));
-
-//volumeSeries.columns.template.setAll({
-//  strokeOpacity: 0,
-//  fillOpacity: 0.5
-//});
-
-// color columns by stock rules
-//volumeSeries.columns.template.adapters.add("fill", function (fill, target) {
-//  var dataItem = target.dataItem;
-//  if (dataItem) {
-//    return stockChart.getVolumeColor(dataItem);
-//  }
-//  return fill;
-//})
-
-
-// Set main series
-// -------------------------------------------------------------------------------
-// https://www.amcharts.com/docs/v5/charts/stock/#Setting_main_series
-//stockChart.set("volumeSeries", volumeSeries);
-//valueLegend.data.setAll([valueSeries, volumeSeries]);
-
-
-// Add cursor(s)
-// -------------------------------------------------------------------------------
-// https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
 mainPanel.set("cursor", am5xy.XYCursor.new(root, {
   yAxis: valueAxis,
   xAxis: dateAxis,
@@ -931,10 +838,6 @@ mainPanel.set("cursor", am5xy.XYCursor.new(root, {
   snapToSeriesBy: "y!"
 }));
 
-
-// Add scrollbar
-// -------------------------------------------------------------------------------
-// https://www.amcharts.com/docs/v5/charts/xy-chart/scrollbars/
 var scrollbar = mainPanel.set("scrollbarX", am5xy.XYChartScrollbar.new(root, {
   orientation: "horizontal",
   height: 50
@@ -967,9 +870,6 @@ sbSeries.fills.template.setAll({
   fillOpacity: 0.3
 });
 
-// Set up series type switcher
-// -------------------------------------------------------------------------------
-// https://www.amcharts.com/docs/v5/charts/stock/toolbar/series-type-control/
 var seriesSwitcher = am5stock.SeriesTypeControl.new(root, {
   stockChart: stockChart
 });
@@ -1028,37 +928,19 @@ function setSeriesType(seriesType) {
   }
 }
 
-
-// Stock toolbar
-// -------------------------------------------------------------------------------
-// https://www.amcharts.com/docs/v5/charts/stock/toolbar/
 var toolbar = am5stock.StockToolbar.new(root, {
   container: document.getElementById("chartcontrols"),
   stockChart: stockChart,
   controls: [
-    //am5stock.IndicatorControl.new(root, {
-    //  stockChart: stockChart,
-    //  legend: valueLegend
-    //}),
     am5stock.DateRangeSelector.new(root, {
       stockChart: stockChart
     }),
     am5stock.PeriodSelector.new(root, {
       stockChart: stockChart
     }),
-    //seriesSwitcher,
-    //am5stock.DrawingControl.new(root, {
-    //  stockChart: stockChart
-    //}),
-    //am5stock.DataSaveControl.new(root, {
-    //  stockChart: stockChart
-    //}),
     am5stock.ResetControl.new(root, {
       stockChart: stockChart
-    }),
-    //am5stock.SettingsControl.new(root, {
-    //  stockChart: stockChart
-    //})
+    })
   ]
 })
 
@@ -1113,7 +995,7 @@ var data = [
   { Date: 1684191600000, Close: 279.99},
   { Date: 1697756400000, Close: 314.99},
   { Date: 1725663600000, Close: 299.99},
-  { Date: 1725663600000, Close: 299.99},
+  { Date: 1729198902637, Close: 299.99},
 ];
 
 var tooltip = am5.Tooltip.new(root, {
@@ -1168,7 +1050,6 @@ makeEvent(1578610800000, "L", am5.color(0x00ff00), "Lowest price")
 
 // set data to all series
 valueSeries.data.setAll(data);
-//volumeSeries.data.setAll(data);
 sbSeries.data.setAll(data);
 
 // Set series type
@@ -1235,6 +1116,9 @@ setSeriesType("line");
   });
 </script>
 <br />
+<div class="td-page-meta__lastmod">
+  Last modified October 16, 2024: <a href="https://github.com/google/docsy-example/commit/d5c25105a816adf703d34e257d18c6641e35681b">First proper generation of website (d5c2510)</a>
+</div>
 
 </div>
 
@@ -1301,8 +1185,8 @@ setSeriesType("line");
 </footer>
 
     </div>
-    <script src="/website/js/main.min.69e2c1ae9320465ab10236d9ef752c6a4442c54b48b883b17c497b7c7d96a796.js" integrity="sha256-aeLBrpMgRlqxAjbZ73UsakRCxUtIuIOxfEl7fH2Wp5Y=" crossorigin="anonymous"></script>
-<script defer src="/website/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+    <script src="/website/js/main.js"></script>
+<script defer src="/website/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/website/js/tabpane-persist.js'></script>
 
   </body>

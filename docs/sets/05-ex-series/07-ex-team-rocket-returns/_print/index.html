@@ -1,10 +1,10 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head>
+  <head><script src="/website/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=website/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" type="text/html" href="https://irtom.github.io/website/docs/sets/05-ex-series/07-ex-team-rocket-returns/">
-<link rel="alternate" type="application/rss&#43;xml" href="https://irtom.github.io/website/docs/sets/05-ex-series/07-ex-team-rocket-returns/index.xml">
+<link rel="canonical" type="text/html" href="http://localhost:1313/website/docs/sets/05-ex-series/07-ex-team-rocket-returns/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/website/docs/sets/05-ex-series/07-ex-team-rocket-returns/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -21,7 +21,7 @@
 
 <title>EX Team Rocket Returns | Pokémonitor</title>
 <meta name="description" content="EX Team Rocket Returns">
-<meta property="og:url" content="https://irtom.github.io/website/docs/sets/05-ex-series/07-ex-team-rocket-returns/">
+<meta property="og:url" content="http://localhost:1313/website/docs/sets/05-ex-series/07-ex-team-rocket-returns/">
   <meta property="og:site_name" content="Pokémonitor">
   <meta property="og:title" content="EX Team Rocket Returns">
   <meta property="og:description" content="EX Team Rocket Returns">
@@ -30,13 +30,13 @@
 
   <meta itemprop="name" content="EX Team Rocket Returns">
   <meta itemprop="description" content="EX Team Rocket Returns">
-  <meta itemprop="datePublished" content="2024-10-16T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-10-16T00:00:00+00:00">
+  <meta itemprop="datePublished" content="2024-10-17T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-10-16T22:33:05+02:00">
   <meta itemprop="wordCount" content="6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="EX Team Rocket Returns">
   <meta name="twitter:description" content="EX Team Rocket Returns">
-<link rel="preload" href="/website/scss/main.min.e27e9dbace77e637983a3900590da42ddfc471da09131ef565f7ea5853a1205a.css" as="style"><link href="/website/scss/main.min.e27e9dbace77e637983a3900590da42ddfc471da09131ef565f7ea5853a1205a.css" rel="stylesheet">
+<link href="/website/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -75,7 +75,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/website/offline-search-index.c25635254f94ca267458fa76329c2a9a.json"
+    data-offline-search-index-json-src="/website/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -132,7 +132,269 @@ Contains 111 cards.</p>
 
 </div>
 
+<!-- Styles -->
+<style>
+#chartcontrols {
+  height: auto;
+  padding: 5px 5px 0 16px;
+  max-width: 100%;
+}
 
+#chartdiv {
+  width: 100%;
+  height: 600px;
+  max-width: 100%;
+}
+</style>
+<!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/stock.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+<!-- Chart code -->
+<script>
+am5.ready(function() {
+var root = am5.Root.new("chartdiv");
+
+const myTheme = am5.Theme.new(root);
+
+myTheme.rule("Grid", ["scrollbar", "minor"]).setAll({
+  visible:false
+});
+
+root.setThemes([
+  am5themes_Animated.new(root),
+  myTheme
+]);
+
+var stockChart = root.container.children.push(am5stock.StockChart.new(root, {  
+  paddingRight: 0
+}));
+
+root.numberFormatter.set("numberFormat", "#,###.00");
+
+var mainPanel = stockChart.panels.push(am5stock.StockPanel.new(root, {
+  wheelY: "zoomX",
+  panX: true,
+  panY: true
+}));
+
+var valueAxis = mainPanel.yAxes.push(am5xy.ValueAxis.new(root, {
+  renderer: am5xy.AxisRendererY.new(root, {
+    pan: "zoom"
+  }),
+  extraMin: 0.1, // adds some space for for main series
+  tooltip: am5.Tooltip.new(root, {}),
+  numberFormat: "#,###.00",
+  extraTooltipPrecision: 2
+}));
+
+var dateAxis = mainPanel.xAxes.push(am5xy.GaplessDateAxis.new(root, {
+  baseInterval: {
+    timeUnit: "day",
+    count: 1
+  },
+  renderer: am5xy.AxisRendererX.new(root, {
+    minorGridEnabled: true
+  }),
+  tooltip: am5.Tooltip.new(root, {})
+}));
+
+var valueSeries = mainPanel.series.push(am5xy.SmoothedXLineSeries.new(root, {
+  name: "Price",
+  valueXField: "Date",
+  valueYField: "Close",
+  xAxis: dateAxis,
+  yAxis: valueAxis,
+  legendValueText: "[bold]{valueY}",
+  legendRangeValueText: ""
+}));
+
+stockChart.set("stockSeries", valueSeries);
+
+var valueLegend = mainPanel.plotContainer.children.push(am5stock.StockLegend.new(root, {
+  stockChart: stockChart
+}));
+valueLegend.settingsButtons.template.set("forceHidden", true);
+
+mainPanel.set("cursor", am5xy.XYCursor.new(root, {
+  yAxis: valueAxis,
+  xAxis: dateAxis,
+  snapToSeries: [valueSeries],
+  snapToSeriesBy: "y!"
+}));
+
+var scrollbar = mainPanel.set("scrollbarX", am5xy.XYChartScrollbar.new(root, {
+  orientation: "horizontal",
+  height: 50
+}));
+stockChart.toolsContainer.children.push(scrollbar);
+
+var sbDateAxis = scrollbar.chart.xAxes.push(am5xy.GaplessDateAxis.new(root, {
+  baseInterval: {
+    timeUnit: "day",
+    count: 1
+  },
+  renderer: am5xy.AxisRendererX.new(root, {
+    minorGridEnabled: true
+  })
+}));
+
+var sbValueAxis = scrollbar.chart.yAxes.push(am5xy.ValueAxis.new(root, {
+  renderer: am5xy.AxisRendererY.new(root, {})
+}));
+
+var sbSeries = scrollbar.chart.series.push(am5xy.LineSeries.new(root, {
+  valueYField: "Close",
+  valueXField: "Date",
+  xAxis: sbDateAxis,
+  yAxis: sbValueAxis
+}));
+
+sbSeries.fills.template.setAll({
+  visible: true,
+  fillOpacity: 0.3
+});
+
+var seriesSwitcher = am5stock.SeriesTypeControl.new(root, {
+  stockChart: stockChart
+});
+
+seriesSwitcher.events.on("selected", function (ev) {
+  setSeriesType("line"); //ev.item.id);
+});
+
+function getNewSettings(series) {
+  var newSettings = [];
+  am5.array.each(["name", "valueYField", "highValueYField", "lowValueYField", "openValueYField", "calculateAggregates", "valueXField", "xAxis", "yAxis", "legendValueText", "legendRangeValueText", "stroke", "fill"], function (setting) {
+    newSettings[setting] = series.get(setting);
+  });
+  return newSettings;
+}
+
+function setSeriesType(seriesType) {
+  // Get current series and its settings
+  var currentSeries = stockChart.get("stockSeries");
+  var newSettings = getNewSettings(currentSeries);
+
+  // Remove previous series
+  var data = currentSeries.data.values;
+  mainPanel.series.removeValue(currentSeries);
+
+  // Create new series
+  var series;
+  switch (seriesType) {
+    case "line":
+      series = mainPanel.series.push(am5xy.SmoothedXLineSeries.new(root, newSettings));
+      break;
+    case "candlestick":
+    case "procandlestick":
+      newSettings.clustered = false;
+      series = mainPanel.series.push(am5xy.CandlestickSeries.new(root, newSettings));
+      if (seriesType == "procandlestick") {
+        series.columns.template.get("themeTags").push("pro");
+      }
+      break;
+    case "ohlc":
+      newSettings.clustered = false;
+      series = mainPanel.series.push(am5xy.OHLCSeries.new(root, newSettings));
+      break;
+  }
+
+  // Set new series as stockSeries
+  if (series) {
+    valueLegend.data.removeValue(currentSeries);
+    series.data.setAll(data);
+    stockChart.set("stockSeries", series);
+    var cursor = mainPanel.get("cursor");
+    if (cursor) {
+      cursor.set("snapToSeries", [series]);
+    }
+    valueLegend.data.insertIndex(0, series);
+  }
+}
+
+var toolbar = am5stock.StockToolbar.new(root, {
+  container: document.getElementById("chartcontrols"),
+  stockChart: stockChart,
+  controls: [
+    am5stock.DateRangeSelector.new(root, {
+      stockChart: stockChart
+    }),
+    am5stock.PeriodSelector.new(root, {
+      stockChart: stockChart
+    }),
+    am5stock.ResetControl.new(root, {
+      stockChart: stockChart
+    })
+  ]
+})
+
+// data
+var data = [
+  
+];
+
+var tooltip = am5.Tooltip.new(root, {
+  getStrokeFromSprite: false,
+  getFillFromSprite: false
+});
+
+tooltip.get("background").setAll({
+  strokeOpacity: 1,
+  stroke: am5.color(0x000000),
+  fillOpacity: 1,
+  fill: am5.color(0xffffff)
+});
+
+
+function makeEvent(date, letter, color, description) {
+  var dataItem = dateAxis.createAxisRange(dateAxis.makeDataItem({ value: date }))
+  var grid = dataItem.get("grid");
+  if (grid) {
+    grid.setAll({ visible: true, strokeOpacity: 0.2, strokeDasharray: [3, 3] })
+  }
+
+  var bullet = am5.Container.new(root, {
+    dy: -100
+  });
+
+  var circle = bullet.children.push(am5.Circle.new(root, {
+    radius: 10,
+    stroke: color,
+    fill: am5.color(0xffffff),
+    tooltipText: description,
+    tooltip: tooltip,
+    tooltipY: 0
+  }));
+
+  var label = bullet.children.push(am5.Label.new(root, {
+    text: letter,
+    centerX: am5.p50,
+    centerY: am5.p50
+  }));
+
+  dataItem.set("bullet", am5xy.AxisBullet.new(root, {
+    location: 0,
+    stacked: true,
+    sprite: bullet
+  }));
+}
+
+makeEvent(1099868400000, "R", am5.color(0x0000ff), "Release")
+
+// set data to all series
+valueSeries.data.setAll(data);
+sbSeries.data.setAll(data);
+
+// Set series type
+setSeriesType("line");
+
+}); // end am5.ready()
+</script>
+<!-- HTML -->
+<div id="chartcontrols"></div>
+<div id="chartdiv"></div>
 </div>
 </div>
 
@@ -211,8 +473,8 @@ Contains 111 cards.</p>
 </footer>
 
     </div>
-    <script src="/website/js/main.min.69e2c1ae9320465ab10236d9ef752c6a4442c54b48b883b17c497b7c7d96a796.js" integrity="sha256-aeLBrpMgRlqxAjbZ73UsakRCxUtIuIOxfEl7fH2Wp5Y=" crossorigin="anonymous"></script>
-<script defer src="/website/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+    <script src="/website/js/main.js"></script>
+<script defer src="/website/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/website/js/tabpane-persist.js'></script>
 
   </body>

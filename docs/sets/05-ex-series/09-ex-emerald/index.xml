@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>EX Emerald on Pokémonitor</title>
-    <link>https://irtom.github.io/website/docs/sets/05-ex-series/09-ex-emerald/</link>
+    <link>http://localhost:1313/website/docs/sets/05-ex-series/09-ex-emerald/</link>
     <description>Recent content in EX Emerald on Pokémonitor</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://irtom.github.io/website/docs/sets/05-ex-series/09-ex-emerald/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/website/docs/sets/05-ex-series/09-ex-emerald/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hidden Fates on Pokémonitor</title>
-    <link>https://irtom.github.io/website/docs/sets/12-sun-moon-series/15-hidden-fates/</link>
+    <link>http://localhost:1313/website/docs/sets/12-sun-moon-series/15-hidden-fates/</link>
     <description>Recent content in Hidden Fates on Pokémonitor</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://irtom.github.io/website/docs/sets/12-sun-moon-series/15-hidden-fates/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/website/docs/sets/12-sun-moon-series/15-hidden-fates/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
