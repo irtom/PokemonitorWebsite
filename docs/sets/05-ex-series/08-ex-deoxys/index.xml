@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>EX Deoxys on Pokémonitor</title>
-    <link>http://localhost:1313/website/docs/sets/05-ex-series/08-ex-deoxys/</link>
+    <link>https://irtom.github.io/website/docs/sets/05-ex-series/08-ex-deoxys/</link>
     <description>Recent content in EX Deoxys on Pokémonitor</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/website/docs/sets/05-ex-series/08-ex-deoxys/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://irtom.github.io/website/docs/sets/05-ex-series/08-ex-deoxys/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Champion&#39;s Path on Pokémonitor</title>
-    <link>http://localhost:1313/website/docs/sets/13-sword-shield-series/04-champion-s-path/</link>
+    <link>https://irtom.github.io/website/docs/sets/13-sword-shield-series/04-champion-s-path/</link>
     <description>Recent content in Champion&#39;s Path on Pokémonitor</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/website/docs/sets/13-sword-shield-series/04-champion-s-path/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://irtom.github.io/website/docs/sets/13-sword-shield-series/04-champion-s-path/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

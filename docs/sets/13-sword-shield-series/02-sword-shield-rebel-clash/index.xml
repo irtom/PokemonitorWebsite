@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rebel Clash on Pokémonitor</title>
-    <link>http://localhost:1313/website/docs/sets/13-sword-shield-series/02-sword-shield-rebel-clash/</link>
+    <link>https://irtom.github.io/website/docs/sets/13-sword-shield-series/02-sword-shield-rebel-clash/</link>
     <description>Recent content in Rebel Clash on Pokémonitor</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/website/docs/sets/13-sword-shield-series/02-sword-shield-rebel-clash/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://irtom.github.io/website/docs/sets/13-sword-shield-series/02-sword-shield-rebel-clash/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

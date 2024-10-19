@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Obsidian Flames on Pokémonitor</title>
-    <link>http://localhost:1313/website/docs/sets/14-scarlet-violet-series/03-scarlet-violet-obsidian-flames/</link>
+    <link>https://irtom.github.io/website/docs/sets/14-scarlet-violet-series/03-scarlet-violet-obsidian-flames/</link>
     <description>Recent content in Obsidian Flames on Pokémonitor</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/website/docs/sets/14-scarlet-violet-series/03-scarlet-violet-obsidian-flames/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://irtom.github.io/website/docs/sets/14-scarlet-violet-series/03-scarlet-violet-obsidian-flames/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
