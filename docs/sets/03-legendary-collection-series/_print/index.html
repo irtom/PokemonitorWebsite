@@ -30,8 +30,8 @@
 
   <meta itemprop="name" content="Legendary Collection Series">
   <meta itemprop="description" content="Legendary Collection Series">
-  <meta itemprop="datePublished" content="2024-10-17T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-10-16T22:33:05+02:00">
+  <meta itemprop="datePublished" content="2024-10-19T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-10-17T23:06:51+02:00">
   <meta itemprop="wordCount" content="3">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Legendary Collection Series">
@@ -350,7 +350,7 @@ var toolbar = am5stock.StockToolbar.new(root, {
 
 // data
 var data = [
-  %%PriceData%%
+  
 ];
 
 var tooltip = am5.Tooltip.new(root, {
@@ -398,8 +398,6 @@ function makeEvent(date, letter, color, description) {
     sprite: bullet
   }));
 }
-
-makeEvent(%%ReleaseDate%%, "R", am5.color(0x0000ff), "Release")
 
 // set data to all series
 valueSeries.data.setAll(data);
@@ -692,7 +690,7 @@ function makeEvent(date, letter, color, description) {
   }));
 }
 
-makeEvent(1022194800000, "R", am5.color(0x0000ff), "Release")
+makeEvent(1022238000000, "R", am5.color(0x0000ff), "Release")
 
 // set data to all series
 valueSeries.data.setAll(data);

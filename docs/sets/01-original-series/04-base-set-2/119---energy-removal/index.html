@@ -28,12 +28,12 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2017-01-05T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-10-16T22:33:05+02:00">
+    <meta property="article:modified_time" content="2024-10-17T23:06:51+02:00">
 
   <meta itemprop="name" content="119/130 - Energy Removal">
   <meta itemprop="description" content="119/130 - Energy Removal - Common">
   <meta itemprop="datePublished" content="2017-01-05T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-10-16T22:33:05+02:00">
+  <meta itemprop="dateModified" content="2024-10-17T23:06:51+02:00">
   <meta itemprop="wordCount" content="12">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="119/130 - Energy Removal">
@@ -120,7 +120,7 @@
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-websitedocssets-li">
   <input type="checkbox" id="m-websitedocssets-check" checked/>
-  <label for="m-websitedocssets-check"><a href="/website/docs/sets/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets"><span class="">Sets</span></a></label>
+  <label for="m-websitedocssets-check"><a href="/website/docs/sets/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets"><span class="">Overall</span></a></label>
   
   <ul class="ul-2 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-websitedocssets01-original-series-li">
@@ -727,7 +727,7 @@
   <li class="breadcrumb-item">
     <a href="/website/docs/">Monitoring</a></li>
   <li class="breadcrumb-item">
-    <a href="/website/docs/sets/">Sets</a></li>
+    <a href="/website/docs/sets/">Overall</a></li>
   <li class="breadcrumb-item">
     <a href="/website/docs/sets/01-original-series/">Original Series</a></li>
   <li class="breadcrumb-item">
@@ -946,21 +946,21 @@ var toolbar = am5stock.StockToolbar.new(root, {
 
 // data
 var data = [
-  { Date: 1584486000000, Close: 0.39},
-  { Date: 1591398000000, Close: 0.35},
-  { Date: 1611529200000, Close: 0.49},
-  { Date: 1613343600000, Close: 0.39},
-  { Date: 1615158000000, Close: 0.35},
-  { Date: 1619996400000, Close: 0.49},
-  { Date: 1622415600000, Close: 0.39},
-  { Date: 1624834800000, Close: 0.35},
-  { Date: 1673823600000, Close: 0.40},
-  { Date: 1675638000000, Close: 0.35},
-  { Date: 1679266800000, Close: 0.49},
-  { Date: 1687129200000, Close: 0.39},
-  { Date: 1690758000000, Close: 0.49},
-  { Date: 1727046000000, Close: 0.59},
-  { Date: 1729198904171, Close: 0.59},
+  { Date: 1584529200000, Close: 0.39},
+  { Date: 1591441200000, Close: 0.35},
+  { Date: 1611572400000, Close: 0.49},
+  { Date: 1613386800000, Close: 0.39},
+  { Date: 1615201200000, Close: 0.35},
+  { Date: 1620039600000, Close: 0.49},
+  { Date: 1622458800000, Close: 0.39},
+  { Date: 1624878000000, Close: 0.35},
+  { Date: 1673866800000, Close: 0.40},
+  { Date: 1675681200000, Close: 0.35},
+  { Date: 1679310000000, Close: 0.49},
+  { Date: 1687172400000, Close: 0.39},
+  { Date: 1690801200000, Close: 0.49},
+  { Date: 1727089200000, Close: 0.59},
+  { Date: 1729332621226, Close: 0.59},
 ];
 
 var tooltip = am5.Tooltip.new(root, {
@@ -1009,9 +1009,9 @@ function makeEvent(date, letter, color, description) {
   }));
 }
 
-makeEvent(951346800000, "R", am5.color(0x0000ff), "Release")
-makeEvent(1727046000000, "U", am5.color(0xff0000), "Highest price")
-makeEvent(1591398000000, "L", am5.color(0x00ff00), "Lowest price")
+makeEvent(951390000000, "R", am5.color(0x0000ff), "Release")
+makeEvent(1727089200000, "U", am5.color(0xff0000), "Highest price")
+makeEvent(1591441200000, "L", am5.color(0x00ff00), "Lowest price")
 
 // set data to all series
 valueSeries.data.setAll(data);
@@ -1082,7 +1082,7 @@ setSeriesType("line");
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified October 16, 2024: <a href="https://github.com/google/docsy-example/commit/d5c25105a816adf703d34e257d18c6641e35681b">First proper generation of website (d5c2510)</a>
+  Last modified October 17, 2024: <a href="https://github.com/google/docsy-example/commit/6a8458ac643806d493019d98df007e082624ec1b">Added set total price chart to set index page (6a8458a)</a>
 </div>
 
 </div>

@@ -28,12 +28,12 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2017-01-05T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-10-16T22:33:05+02:00">
+    <meta property="article:modified_time" content="2024-10-17T23:06:51+02:00">
 
   <meta itemprop="name" content="168/165 - Charmander">
   <meta itemprop="description" content="168/165 - Charmander - Illustration Rare">
   <meta itemprop="datePublished" content="2017-01-05T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-10-16T22:33:05+02:00">
+  <meta itemprop="dateModified" content="2024-10-17T23:06:51+02:00">
   <meta itemprop="wordCount" content="12">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="168/165 - Charmander">
@@ -120,7 +120,7 @@
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-websitedocssets-li">
   <input type="checkbox" id="m-websitedocssets-check" checked/>
-  <label for="m-websitedocssets-check"><a href="/website/docs/sets/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets"><span class="">Sets</span></a></label>
+  <label for="m-websitedocssets-check"><a href="/website/docs/sets/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websitedocssets"><span class="">Overall</span></a></label>
   
   <ul class="ul-2 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocssets01-original-series-li">
@@ -727,7 +727,7 @@
   <li class="breadcrumb-item">
     <a href="/website/docs/">Monitoring</a></li>
   <li class="breadcrumb-item">
-    <a href="/website/docs/sets/">Sets</a></li>
+    <a href="/website/docs/sets/">Overall</a></li>
   <li class="breadcrumb-item">
     <a href="/website/docs/sets/14-scarlet-violet-series/">Scarlet &amp; Violet Series</a></li>
   <li class="breadcrumb-item">
@@ -946,26 +946,25 @@ var toolbar = am5stock.StockToolbar.new(root, {
 
 // data
 var data = [
-  { Date: 1694214000000, Close: 9.99},
-  { Date: 1694559600000, Close: 8.99},
-  { Date: 1695337200000, Close: 24.99},
-  { Date: 1696028400000, Close: 34.99},
-  { Date: 1699484400000, Close: 35.99},
-  { Date: 1702076400000, Close: 32.99},
-  { Date: 1702508400000, Close: 31.99},
-  { Date: 1705532400000, Close: 34.99},
-  { Date: 1706050800000, Close: 35.99},
-  { Date: 1707519600000, Close: 36.99},
-  { Date: 1707778800000, Close: 34.99},
-  { Date: 1714604400000, Close: 31.99},
-  { Date: 1719270000000, Close: 30.99},
-  { Date: 1719961200000, Close: 29.99},
-  { Date: 1721343600000, Close: 30.99},
-  { Date: 1723244400000, Close: 31.99},
-  { Date: 1726095600000, Close: 32.99},
-  { Date: 1726182000000, Close: 33.99},
-  { Date: 1729198953644, Close: 8.99},
-  { Date: 1729198953645, Close: 33.99},
+  { Date: 1694257200000, Close: 9.99},
+  { Date: 1694602800000, Close: 8.99},
+  { Date: 1695380400000, Close: 24.99},
+  { Date: 1696071600000, Close: 34.99},
+  { Date: 1699527600000, Close: 35.99},
+  { Date: 1702119600000, Close: 32.99},
+  { Date: 1702551600000, Close: 31.99},
+  { Date: 1705575600000, Close: 34.99},
+  { Date: 1706094000000, Close: 35.99},
+  { Date: 1707562800000, Close: 36.99},
+  { Date: 1707822000000, Close: 34.99},
+  { Date: 1714647600000, Close: 31.99},
+  { Date: 1719313200000, Close: 30.99},
+  { Date: 1720004400000, Close: 29.99},
+  { Date: 1721386800000, Close: 30.99},
+  { Date: 1723287600000, Close: 31.99},
+  { Date: 1726138800000, Close: 32.99},
+  { Date: 1726225200000, Close: 33.99},
+  { Date: 1729332630559, Close: 33.99},
 ];
 
 var tooltip = am5.Tooltip.new(root, {
@@ -1014,9 +1013,9 @@ function makeEvent(date, letter, color, description) {
   }));
 }
 
-makeEvent(1695337200000, "R", am5.color(0x0000ff), "Release")
-makeEvent(1707519600000, "U", am5.color(0xff0000), "Highest price")
-makeEvent(1694559600000, "L", am5.color(0x00ff00), "Lowest price")
+makeEvent(1695380400000, "R", am5.color(0x0000ff), "Release")
+makeEvent(1707562800000, "U", am5.color(0xff0000), "Highest price")
+makeEvent(1694602800000, "L", am5.color(0x00ff00), "Lowest price")
 
 // set data to all series
 valueSeries.data.setAll(data);
@@ -1087,7 +1086,7 @@ setSeriesType("line");
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified October 16, 2024: <a href="https://github.com/google/docsy-example/commit/d5c25105a816adf703d34e257d18c6641e35681b">First proper generation of website (d5c2510)</a>
+  Last modified October 17, 2024: <a href="https://github.com/google/docsy-example/commit/6a8458ac643806d493019d98df007e082624ec1b">Added set total price chart to set index page (6a8458a)</a>
 </div>
 
 </div>
