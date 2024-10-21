@@ -77,7 +77,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/website/offline-search-index.e86d230fdd528f4be35195724f8cc240.json"
+    data-offline-search-index-json-src="/website/offline-search-index.2ca08d65f7ec0bff3e2bf16a62c0e943.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -90,7 +90,21 @@
       <div class="td-main">
         <div class="row flex-xl-nowrap">
           <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
-            <div id="td-sidebar-menu" class="td-sidebar__inner">
+            
+  <script>
+    $(function() {
+    $("#td-section-nav a").removeClass("active");
+    $("#td-section-nav #m-websiteblog20181006second-blog-post").addClass("active"); 
+    $("#td-section-nav #m-websiteblog20181006second-blog-post-li span").addClass("td-sidebar-nav-active-item"); 
+    $("#td-section-nav #m-websiteblog20181006second-blog-post").parents("li").addClass("active-path"); 
+    $("#td-section-nav li.active-path").addClass("show"); 
+    $("#td-section-nav li.active-path").children("input").prop('checked', true);
+    $("#td-section-nav #m-websiteblog20181006second-blog-post-li").siblings("li").addClass("show");  
+    $("#td-section-nav #m-websiteblog20181006second-blog-post-li").children("ul").children("li").addClass("show");  
+    $("#td-sidebar-menu").toggleClass("d-none"); 
+    });
+  </script>
+  <div id="td-sidebar-menu" class="td-sidebar__inner d-none">
   <form class="td-sidebar__search d-flex align-items-center">
     <div class="td-search td-search--offline">
   <div class="td-search__icon"></div>
@@ -101,7 +115,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/website/offline-search-index.e86d230fdd528f4be35195724f8cc240.json"
+    data-offline-search-index-json-src="/website/offline-search-index.2ca08d65f7ec0bff3e2bf16a62c0e943.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -111,11 +125,11 @@
   </form>
   <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
     <ul class="td-sidebar-nav__section pe-md-3 ul-0">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-websiteblog-li">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websiteblog-li">
   <a href="/website/blog/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-websiteblog"><span class="">Blog</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-websiteblognews-li">
-  <input type="checkbox" id="m-websiteblognews-check" checked/>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websiteblognews-li">
+  <input type="checkbox" id="m-websiteblognews-check"/>
   <label for="m-websiteblognews-check"><a href="/website/blog/news/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-websiteblognews"><span class="">News</span></a></label>
   
   <ul class="ul-2 foldable">
@@ -123,9 +137,9 @@
   <input type="checkbox" id="m-websiteblog20181006easy-documentation-with-docsy-check"/>
   <label for="m-websiteblog20181006easy-documentation-with-docsy-check"><a href="/website/blog/2018/10/06/easy-documentation-with-docsy/" title="Easy documentation with Docsy" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websiteblog20181006easy-documentation-with-docsy"><span class="">Announcing Docsy</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-websiteblog20181006second-blog-post-li">
-  <input type="checkbox" id="m-websiteblog20181006second-blog-post-check" checked/>
-  <label for="m-websiteblog20181006second-blog-post-check"><a href="/website/blog/2018/10/06/second-blog-post/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-websiteblog20181006second-blog-post"><span class="td-sidebar-nav-active-item">Second blog post</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websiteblog20181006second-blog-post-li">
+  <input type="checkbox" id="m-websiteblog20181006second-blog-post-check"/>
+  <label for="m-websiteblog20181006second-blog-post-check"><a href="/website/blog/2018/10/06/second-blog-post/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-websiteblog20181006second-blog-post"><span class="">Second blog post</span></a></label>
   
 </li>
   </ul>
@@ -146,6 +160,7 @@
     </ul>
   </nav>
 </div>
+
 
           </aside>
           <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">

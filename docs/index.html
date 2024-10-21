@@ -33,8 +33,8 @@ For large documentation sets we recommend adding content under the headings in t
   <meta itemprop="description" content=" This is a placeholder page that shows you how to use this template site.
 This section is where the user documentation for your project lives - all the information your users need to understand and successfully use your project.
 For large documentation sets we recommend adding content under the headings in this section, though if some or all of them don’t apply to your project feel free to remove them or add your own. You can see an example of a smaller Docsy documentation site in the Docsy User Guide, which lives in the Docsy theme repo if you’d like to copy its docs section.">
-  <meta itemprop="datePublished" content="2024-10-19T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-10-19T00:00:00+00:00">
+  <meta itemprop="datePublished" content="2024-10-21T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-10-21T00:00:00+00:00">
   <meta itemprop="wordCount" content="157">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Monitoring">
@@ -80,7 +80,7 @@ For large documentation sets we recommend adding content under the headings in t
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/website/offline-search-index.e86d230fdd528f4be35195724f8cc240.json"
+    data-offline-search-index-json-src="/website/offline-search-index.2ca08d65f7ec0bff3e2bf16a62c0e943.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -93,7 +93,21 @@ For large documentation sets we recommend adding content under the headings in t
       <div class="td-main">
         <div class="row flex-xl-nowrap">
           <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
-            <div id="td-sidebar-menu" class="td-sidebar__inner">
+            
+  <script>
+    $(function() {
+    $("#td-section-nav a").removeClass("active");
+    $("#td-section-nav #m-websitedocs").addClass("active"); 
+    $("#td-section-nav #m-websitedocs-li span").addClass("td-sidebar-nav-active-item"); 
+    $("#td-section-nav #m-websitedocs").parents("li").addClass("active-path"); 
+    $("#td-section-nav li.active-path").addClass("show"); 
+    $("#td-section-nav li.active-path").children("input").prop('checked', true);
+    $("#td-section-nav #m-websitedocs-li").siblings("li").addClass("show");  
+    $("#td-section-nav #m-websitedocs-li").children("ul").children("li").addClass("show");  
+    $("#td-sidebar-menu").toggleClass("d-none"); 
+    });
+  </script>
+  <div id="td-sidebar-menu" class="td-sidebar__inner d-none">
   <form class="td-sidebar__search d-flex align-items-center">
     <div class="td-search td-search--offline">
   <div class="td-search__icon"></div>
@@ -104,7 +118,7 @@ For large documentation sets we recommend adding content under the headings in t
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/website/offline-search-index.e86d230fdd528f4be35195724f8cc240.json"
+    data-offline-search-index-json-src="/website/offline-search-index.2ca08d65f7ec0bff3e2bf16a62c0e943.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -114,8 +128,8 @@ For large documentation sets we recommend adding content under the headings in t
   </form>
   <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
     <ul class="td-sidebar-nav__section pe-md-3 ul-0">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-websitedocs-li">
-  <a href="/website/docs/" class="align-left ps-0 active td-sidebar-link td-sidebar-link__section tree-root" id="m-websitedocs"><span class="td-sidebar-nav-active-item">Monitoring</span></a>
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-websitedocs-li">
+  <a href="/website/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-websitedocs"><span class="">Monitoring</span></a>
   <ul class="ul-1">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-websitedocsoverview-li">
   <input type="checkbox" id="m-websitedocsoverview-check"/>
@@ -704,6 +718,7 @@ For large documentation sets we recommend adding content under the headings in t
     </ul>
   </nav>
 </div>
+
 
           </aside>
           <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
