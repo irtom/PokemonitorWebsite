@@ -28,9 +28,9 @@
 
   <meta itemprop="name" content="Sword & Shield Series">
   <meta itemprop="description" content="Sword &amp; Shield Series">
-  <meta itemprop="datePublished" content="2024-10-29T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-10-29T00:00:00+00:00">
-  <meta itemprop="wordCount" content="20">
+  <meta itemprop="datePublished" content="2024-11-10T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-11-10T00:00:00+00:00">
+  <meta itemprop="wordCount" content="42">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Sword & Shield Series">
   <meta name="twitter:description" content="Sword &amp; Shield Series">
@@ -75,7 +75,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.86b0a720b53d90d3453d2606feb6cbb8.json"
+    data-offline-search-index-json-src="/offline-search-index.99cfb7a9b7983f6fcdd8ad5b26a3449f.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -113,7 +113,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.86b0a720b53d90d3453d2606feb6cbb8.json"
+    data-offline-search-index-json-src="/offline-search-index.99cfb7a9b7983f6fcdd8ad5b26a3449f.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -723,7 +723,15 @@ Advertisement space
 
 </div>
 
-            
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#price-data">Price data</a></li>
+    <li><a href="#generation-data">Generation data</a></li>
+  </ul>
+</nav>
+      </div>
+    
             
 	
           </aside>
@@ -755,6 +763,7 @@ Advertisement space
 
 </div>
 
+<h2 id="price-data">Price data<a class="td-heading-self-link" href="#price-data" aria-label="Heading self-link"></a></h2>
 <p>The graph below shows the summed price of all cards in all expansions in this set.</p>
 <!-- Styles -->
 <style>
@@ -1996,14 +2005,16 @@ var data = [
   {Date: 1728558000000, Close: 13849},
   {Date: 1728644400000, Close: 13831},
   {Date: 1728730800000, Close: 13813},
-  {Date: 1728990000000, Close: 13795},
+  {Date: 1728903600000, Close: 13795},
   {Date: 1729249200000, Close: 13778},
   {Date: 1729335600000, Close: 13742},
   {Date: 1729594800000, Close: 13725},
   {Date: 1729681200000, Close: 13707},
   {Date: 1729767600000, Close: 13689},
-  {Date: 1730113200000, Close: 13671},
   {Date: 1730199600000, Close: 13671},
+  {Date: 1730545200000, Close: 13654},
+  {Date: 1730977200000, Close: 13636},
+  {Date: 1731236400000, Close: 13618},
 ];
 
 var tooltip = am5.Tooltip.new(root, {
@@ -2052,6 +2063,10 @@ function makeEvent(date, letter, color, description) {
   }));
 }
 
+makeEvent(0, "R", am5.color(0x0000ff), "Release")
+makeEvent(1674212400000, "U", am5.color(0xff0000), "Highest price")
+makeEvent(1580209200000, "L", am5.color(0x00ff00), "Lowest price")
+
 // set data to all series
 valueSeries.data.setAll(data);
 sbSeries.data.setAll(data);
@@ -2064,6 +2079,305 @@ setSeriesType("line");
 <!-- HTML -->
 <div id="chartcontrols"></div>
 <div id="chartdiv"></div>
+<h2 id="generation-data">Generation data<a class="td-heading-self-link" href="#generation-data" aria-label="Heading self-link"></a></h2>
+<p>The graph below shows the number of cards of each generation present in each expansion in this set.</p>
+<!-- Styles -->
+<style>
+#chartdiv2 {
+  width: 100%;
+  height: 500px;
+}
+</style>
+<!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+<!-- Chart code -->
+<script>
+am5.ready(function() {
+
+var root = am5.Root.new("chartdiv2");
+
+root.setThemes([
+  am5themes_Animated.new(root)
+]);
+
+var chart = root.container.children.push(am5xy.XYChart.new(root, {
+  panX: false,
+  panY: false,
+  wheelX: "panX",
+  wheelY: "zoomX",
+  paddingLeft: 0,
+  layout: root.verticalLayout
+}));
+
+chart.set("scrollbarX", am5.Scrollbar.new(root, {
+  orientation: "horizontal"
+}));
+
+var data = [
+    {"expansion": "Sword & Shield",
+  "trainers": 42,
+  "gen1": 35,
+  "gen2": 11,
+  "gen3": 13,
+  "gen4": 7,
+  "gen5": 19,
+  "gen6": 0,
+  "gen7": 10,
+  "gen8": 79},
+  {"expansion": "Rebel Clash",
+  "trainers": 33,
+  "gen1": 24,
+  "gen2": 6,
+  "gen3": 14,
+  "gen4": 14,
+  "gen5": 19,
+  "gen6": 16,
+  "gen7": 7,
+  "gen8": 76},
+  {"expansion": "Darkness Ablaze",
+  "trainers": 27,
+  "gen1": 21,
+  "gen2": 26,
+  "gen3": 22,
+  "gen4": 10,
+  "gen5": 37,
+  "gen6": 7,
+  "gen7": 20,
+  "gen8": 31},
+  {"expansion": "Champion's Path",
+  "trainers": 22,
+  "gen1": 12,
+  "gen2": 0,
+  "gen3": 12,
+  "gen4": 3,
+  "gen5": 6,
+  "gen6": 2,
+  "gen7": 3,
+  "gen8": 20},
+  {"expansion": "Vivid Voltage",
+  "trainers": 39,
+  "gen1": 24,
+  "gen2": 19,
+  "gen3": 29,
+  "gen4": 14,
+  "gen5": 30,
+  "gen6": 11,
+  "gen7": 11,
+  "gen8": 26},
+  {"expansion": "Shining Fates",
+  "trainers": 15,
+  "gen1": 18,
+  "gen2": 7,
+  "gen3": 6,
+  "gen4": 9,
+  "gen5": 9,
+  "gen6": 4,
+  "gen7": 9,
+  "gen8": 118},
+  {"expansion": "Battle Styles",
+  "trainers": 37,
+  "gen1": 19,
+  "gen2": 15,
+  "gen3": 10,
+  "gen4": 20,
+  "gen5": 21,
+  "gen6": 9,
+  "gen7": 15,
+  "gen8": 37},
+  {"expansion": "Chilling Reign",
+  "trainers": 65,
+  "gen1": 31,
+  "gen2": 22,
+  "gen3": 28,
+  "gen4": 9,
+  "gen5": 21,
+  "gen6": 7,
+  "gen7": 12,
+  "gen8": 38},
+  {"expansion": "Evolving Skies",
+  "trainers": 46,
+  "gen1": 26,
+  "gen2": 25,
+  "gen3": 30,
+  "gen4": 17,
+  "gen5": 37,
+  "gen6": 24,
+  "gen7": 9,
+  "gen8": 23},
+  {"expansion": "Celebrations",
+  "trainers": 3,
+  "gen1": 7,
+  "gen2": 1,
+  "gen3": 2,
+  "gen4": 2,
+  "gen5": 2,
+  "gen6": 2,
+  "gen7": 4,
+  "gen8": 2},
+  {"expansion": "Fusion Strike",
+  "trainers": 39,
+  "gen1": 45,
+  "gen2": 23,
+  "gen3": 26,
+  "gen4": 11,
+  "gen5": 42,
+  "gen6": 18,
+  "gen7": 20,
+  "gen8": 60},
+  {"expansion": "Brilliant Stars",
+  "trainers": 40,
+  "gen1": 31,
+  "gen2": 11,
+  "gen3": 21,
+  "gen4": 56,
+  "gen5": 27,
+  "gen6": 5,
+  "gen7": 6,
+  "gen8": 19},
+  {"expansion": "Astral Radiance",
+  "trainers": 54,
+  "gen1": 27,
+  "gen2": 27,
+  "gen3": 13,
+  "gen4": 55,
+  "gen5": 22,
+  "gen6": 5,
+  "gen7": 9,
+  "gen8": 34},
+  {"expansion": "Pokemon GO",
+  "trainers": 14,
+  "gen1": 40,
+  "gen2": 10,
+  "gen3": 6,
+  "gen4": 3,
+  "gen5": 6,
+  "gen6": 1,
+  "gen7": 8},
+  {"expansion": "Lost Origin",
+  "trainers": 46,
+  "gen1": 51,
+  "gen2": 12,
+  "gen3": 26,
+  "gen4": 38,
+  "gen5": 25,
+  "gen6": 20,
+  "gen7": 5,
+  "gen8": 24},
+  {"expansion": "Silver Tempest",
+  "trainers": 47,
+  "gen1": 28,
+  "gen2": 26,
+  "gen3": 36,
+  "gen4": 13,
+  "gen5": 39,
+  "gen6": 18,
+  "gen7": 17,
+  "gen8": 20},
+  {"expansion": "Crown Zenith",
+  "trainers": 47,
+  "gen1": 28,
+  "gen2": 12,
+  "gen3": 30,
+  "gen4": 42,
+  "gen5": 18,
+  "gen6": 11,
+  "gen7": 18,
+  "gen8": 24}
+
+]
+
+var xRenderer = am5xy.AxisRendererX.new(root, {
+  minorGridEnabled: true,
+  minGridDistance: 10
+});
+
+var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+  categoryField: "expansion",
+  renderer: xRenderer,
+  tooltip: am5.Tooltip.new(root, {})
+}));
+
+xRenderer.grid.template.setAll({
+  location: 1
+})
+xRenderer.labels.template.setAll({
+  rotation: -90,
+  centerY: am5.p50,
+  centerX: am5.p100,
+  paddingRight: 15
+});
+
+xAxis.data.setAll(data);
+
+var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+  min: 0,
+  calculateTotals: true,
+  renderer: am5xy.AxisRendererY.new(root, {
+    strokeOpacity: 0.1
+  })
+}));
+
+var legend = chart.children.push(am5.Legend.new(root, {
+  centerX: am5.p50,
+  x: am5.p50
+}));
+
+function makeSeries(name, fieldName, color) {
+  var series = chart.series.push(am5xy.ColumnSeries.new(root, {
+    name: name,
+    stacked: true,
+    xAxis: xAxis,
+    yAxis: yAxis,
+    valueYField: fieldName,
+    categoryXField: "expansion"
+  }));
+
+  series.columns.template.setAll({
+    tooltipText: "{name}, {categoryX}: {valueY}/{valueYTotal}",
+    tooltipY: am5.percent(10)
+  });
+  series.data.setAll(data);
+
+  series.appear();
+
+  series.bullets.push(function () {
+    return am5.Bullet.new(root, {
+      sprite: am5.Label.new(root, {
+        text: "",
+        fill: root.interfaceColors.get("alternativeText"),
+        centerY: am5.p50,
+        centerX: am5.p50,
+        populateText: true
+      })
+    });
+  });
+  
+  if (color == 1) {
+    series.set("fill", am5.color(0xD3D3D3));
+    series.set("stroke", am5.color(0xD3D3D3));
+  }
+  
+  legend.data.push(series);
+}
+
+makeSeries("Trainers", "trainers", 1);
+makeSeries("Generation 1", "gen1", 0);
+makeSeries("Generation 2", "gen2", 0);
+makeSeries("Generation 3", "gen3", 0);
+makeSeries("Generation 4", "gen4", 0);
+makeSeries("Generation 5", "gen5", 0);
+makeSeries("Generation 6", "gen6", 0);
+makeSeries("Generation 7", "gen7", 0);
+makeSeries("Generation 8", "gen8", 0);
+                      
+chart.appear(1000, 100);
+
+}); // end am5.ready()
+</script>
+<!-- HTML -->
+<div id="chartdiv2"></div>
   <div class="section-index">
     
     

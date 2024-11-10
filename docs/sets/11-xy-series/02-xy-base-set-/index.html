@@ -28,9 +28,9 @@
 
   <meta itemprop="name" content="XY">
   <meta itemprop="description" content="XY">
-  <meta itemprop="datePublished" content="2024-10-29T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-10-29T00:00:00+00:00">
-  <meta itemprop="wordCount" content="19">
+  <meta itemprop="datePublished" content="2024-11-10T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-11-10T00:00:00+00:00">
+  <meta itemprop="wordCount" content="44">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="XY">
   <meta name="twitter:description" content="XY">
@@ -75,7 +75,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.86b0a720b53d90d3453d2606feb6cbb8.json"
+    data-offline-search-index-json-src="/offline-search-index.99cfb7a9b7983f6fcdd8ad5b26a3449f.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -113,7 +113,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.86b0a720b53d90d3453d2606feb6cbb8.json"
+    data-offline-search-index-json-src="/offline-search-index.99cfb7a9b7983f6fcdd8ad5b26a3449f.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -723,7 +723,15 @@ Advertisement space
 
 </div>
 
-            
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#price-data">Price data</a></li>
+    <li><a href="#generation-data">Generation data</a></li>
+  </ul>
+</nav>
+      </div>
+    
             
 	
           </aside>
@@ -750,14 +758,9 @@ Advertisement space
 	<header class="article-meta">
 		
   </header>
-	
-
-<div class="pageinfo pageinfo-primary">
-<p>Released on 05-02-2014.
-Contains 146 cards.</p>
-
-</div>
-
+	<p>Highest price was 415.64 on 04-06-2021.</p>
+<p>Lowest price was 142.56 on 02-12-2019.</p>
+<h2 id="price-data">Price data<a class="td-heading-self-link" href="#price-data" aria-label="Heading self-link"></a></h2>
 <p>The graph below shows the summed price of all cards in this expansion.</p>
 <!-- Styles -->
 <style>
@@ -1598,23 +1601,26 @@ var data = [
   {Date: 1714561200000, Close: 305},
   {Date: 1715857200000, Close: 306},
   {Date: 1716030000000, Close: 305},
-  {Date: 1716289200000, Close: 306},
-  {Date: 1717671600000, Close: 305},
+  {Date: 1716202800000, Close: 306},
+  {Date: 1717758000000, Close: 305},
   {Date: 1717930800000, Close: 304},
-  {Date: 1718449200000, Close: 303},
-  {Date: 1720350000000, Close: 302},
-  {Date: 1720522800000, Close: 303},
-  {Date: 1720609200000, Close: 302},
-  {Date: 1721300400000, Close: 303},
-  {Date: 1721386800000, Close: 302},
-  {Date: 1723460400000, Close: 303},
-  {Date: 1723546800000, Close: 302},
-  {Date: 1723719600000, Close: 303},
-  {Date: 1724497200000, Close: 302},
-  {Date: 1724583600000, Close: 303},
-  {Date: 1727607600000, Close: 302},
-  {Date: 1728903600000, Close: 301},
-  {Date: 1730199600000, Close: 301},
+  {Date: 1719140400000, Close: 303},
+  {Date: 1719226800000, Close: 304},
+  {Date: 1719572400000, Close: 303},
+  {Date: 1720004400000, Close: 304},
+  {Date: 1720350000000, Close: 303},
+  {Date: 1725361200000, Close: 304},
+  {Date: 1726311600000, Close: 305},
+  {Date: 1727262000000, Close: 304},
+  {Date: 1727607600000, Close: 303},
+  {Date: 1727694000000, Close: 304},
+  {Date: 1727780400000, Close: 303},
+  {Date: 1727953200000, Close: 304},
+  {Date: 1728212400000, Close: 303},
+  {Date: 1730286000000, Close: 304},
+  {Date: 1730372400000, Close: 305},
+  {Date: 1731150000000, Close: 304},
+  {Date: 1731236400000, Close: 304},
 ];
 
 var tooltip = am5.Tooltip.new(root, {
@@ -1664,6 +1670,8 @@ function makeEvent(date, letter, color, description) {
 }
 
 makeEvent(1391598000000, "R", am5.color(0x0000ff), "Release")
+makeEvent(1622804400000, "U", am5.color(0xff0000), "Highest price")
+makeEvent(1575284400000, "L", am5.color(0x00ff00), "Lowest price")
 
 // set data to all series
 valueSeries.data.setAll(data);
@@ -1677,6 +1685,141 @@ setSeriesType("line");
 <!-- HTML -->
 <div id="chartcontrols"></div>
 <div id="chartdiv"></div>
+<h2 id="generation-data">Generation data<a class="td-heading-self-link" href="#generation-data" aria-label="Heading self-link"></a></h2>
+<p>The graph below shows the number of cards of each generation present in this expansion.</p>
+<!-- Styles -->
+<style>
+#chartdiv2 {
+  width: 100%;
+  height: 500px;
+}
+</style>
+<!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+<!-- Chart code -->
+<script>
+am5.ready(function() {
+
+var root = am5.Root.new("chartdiv2");
+
+root.setThemes([
+  am5themes_Animated.new(root)
+]);
+
+var chart = root.container.children.push(am5xy.XYChart.new(root, {
+  panX: false,
+  panY: false,
+  wheelX: "panX",
+  wheelY: "zoomX",
+  paddingLeft: 0,
+  layout: root.verticalLayout
+}));
+
+chart.set("scrollbarX", am5.Scrollbar.new(root, {
+  orientation: "horizontal"
+}));
+
+var data = [
+    {"expansion": "XY",
+  "trainers": 26,
+  "gen1": 32,
+  "gen2": 8,
+  "gen3": 11,
+  "gen4": 3,
+  "gen5": 24,
+  "gen6": 43}
+]
+
+var xRenderer = am5xy.AxisRendererX.new(root, {
+  minorGridEnabled: true,
+  minGridDistance: 10
+});
+
+var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+  categoryField: "expansion",
+  renderer: xRenderer,
+  tooltip: am5.Tooltip.new(root, {})
+}));
+
+xRenderer.grid.template.setAll({
+  location: 1
+})
+xRenderer.labels.template.setAll({
+  rotation: -90,
+  centerY: am5.p50,
+  centerX: am5.p100,
+  paddingRight: 15
+});
+
+xAxis.data.setAll(data);
+
+var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+  min: 0,
+  calculateTotals: true,
+  renderer: am5xy.AxisRendererY.new(root, {
+    strokeOpacity: 0.1
+  })
+}));
+
+var legend = chart.children.push(am5.Legend.new(root, {
+  centerX: am5.p50,
+  x: am5.p50
+}));
+
+function makeSeries(name, fieldName, color) {
+  var series = chart.series.push(am5xy.ColumnSeries.new(root, {
+    name: name,
+    stacked: true,
+    xAxis: xAxis,
+    yAxis: yAxis,
+    valueYField: fieldName,
+    categoryXField: "expansion"
+  }));
+
+  series.columns.template.setAll({
+    tooltipText: "{name}, {categoryX}: {valueY}/{valueYTotal}",
+    tooltipY: am5.percent(10)
+  });
+  series.data.setAll(data);
+
+  series.appear();
+
+  series.bullets.push(function () {
+    return am5.Bullet.new(root, {
+      sprite: am5.Label.new(root, {
+        text: "",
+        fill: root.interfaceColors.get("alternativeText"),
+        centerY: am5.p50,
+        centerX: am5.p50,
+        populateText: true
+      })
+    });
+  });
+  
+  if (color == 1) {
+    series.set("fill", am5.color(0xD3D3D3));
+    series.set("stroke", am5.color(0xD3D3D3));
+  }
+  
+  legend.data.push(series);
+}
+
+makeSeries("Trainers", "trainers", 1);
+makeSeries("Generation 1", "gen1", 0);
+makeSeries("Generation 2", "gen2", 0);
+makeSeries("Generation 3", "gen3", 0);
+makeSeries("Generation 4", "gen4", 0);
+makeSeries("Generation 5", "gen5", 0);
+makeSeries("Generation 6", "gen6", 0);
+                      
+chart.appear(1000, 100);
+
+}); // end am5.ready()
+</script>
+<!-- HTML -->
+<div id="chartdiv2"></div>
   <div class="section-index">
     
     

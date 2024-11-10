@@ -28,9 +28,9 @@
 
   <meta itemprop="name" content="Surging Sparks">
   <meta itemprop="description" content="Surging Sparks">
-  <meta itemprop="datePublished" content="2024-10-29T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-10-29T00:00:00+00:00">
-  <meta itemprop="wordCount" content="19">
+  <meta itemprop="datePublished" content="2024-11-10T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-11-10T00:00:00+00:00">
+  <meta itemprop="wordCount" content="44">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Surging Sparks">
   <meta name="twitter:description" content="Surging Sparks">
@@ -75,7 +75,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.86b0a720b53d90d3453d2606feb6cbb8.json"
+    data-offline-search-index-json-src="/offline-search-index.99cfb7a9b7983f6fcdd8ad5b26a3449f.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -113,7 +113,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.86b0a720b53d90d3453d2606feb6cbb8.json"
+    data-offline-search-index-json-src="/offline-search-index.99cfb7a9b7983f6fcdd8ad5b26a3449f.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -723,7 +723,15 @@ Advertisement space
 
 </div>
 
-            
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#price-data">Price data</a></li>
+    <li><a href="#generation-data">Generation data</a></li>
+  </ul>
+</nav>
+      </div>
+    
             
 	
           </aside>
@@ -750,14 +758,9 @@ Advertisement space
 	<header class="article-meta">
 		
   </header>
-	
-
-<div class="pageinfo pageinfo-primary">
-<p>Released on 08-11-2024.
-Contains 191 cards.</p>
-
-</div>
-
+	<p>Highest price was 2140.86 on 08-11-2024.</p>
+<p>Lowest price was 0.00 on 29-10-2024.</p>
+<h2 id="price-data">Price data<a class="td-heading-self-link" href="#price-data" aria-label="Heading self-link"></a></h2>
 <p>The graph below shows the summed price of all cards in this expansion.</p>
 <!-- Styles -->
 <style>
@@ -958,7 +961,9 @@ var toolbar = am5stock.StockToolbar.new(root, {
 
 // data
 var data = [
-  
+  {Date: 1731063600000, Close: 2141},
+  {Date: 1731150000000, Close: 2010},
+  {Date: 1731236400000, Close: 2004},
 ];
 
 var tooltip = am5.Tooltip.new(root, {
@@ -1008,6 +1013,8 @@ function makeEvent(date, letter, color, description) {
 }
 
 makeEvent(1731063600000, "R", am5.color(0x0000ff), "Release")
+makeEvent(1731063600000, "U", am5.color(0xff0000), "Highest price")
+makeEvent(1730199600000, "L", am5.color(0x00ff00), "Lowest price")
 
 // set data to all series
 valueSeries.data.setAll(data);
@@ -1021,6 +1028,147 @@ setSeriesType("line");
 <!-- HTML -->
 <div id="chartcontrols"></div>
 <div id="chartdiv"></div>
+<h2 id="generation-data">Generation data<a class="td-heading-self-link" href="#generation-data" aria-label="Heading self-link"></a></h2>
+<p>The graph below shows the number of cards of each generation present in this expansion.</p>
+<!-- Styles -->
+<style>
+#chartdiv2 {
+  width: 100%;
+  height: 500px;
+}
+</style>
+<!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+<!-- Chart code -->
+<script>
+am5.ready(function() {
+
+var root = am5.Root.new("chartdiv2");
+
+root.setThemes([
+  am5themes_Animated.new(root)
+]);
+
+var chart = root.container.children.push(am5xy.XYChart.new(root, {
+  panX: false,
+  panY: false,
+  wheelX: "panX",
+  wheelY: "zoomX",
+  paddingLeft: 0,
+  layout: root.verticalLayout
+}));
+
+chart.set("scrollbarX", am5.Scrollbar.new(root, {
+  orientation: "horizontal"
+}));
+
+var data = [
+    {"expansion": "Surging Sparks",
+  "trainers": 52,
+  "gen1": 26,
+  "gen2": 11,
+  "gen3": 32,
+  "gen4": 13,
+  "gen5": 31,
+  "gen6": 12,
+  "gen7": 16,
+  "gen8": 14,
+  "gen9": 44}
+]
+
+var xRenderer = am5xy.AxisRendererX.new(root, {
+  minorGridEnabled: true,
+  minGridDistance: 10
+});
+
+var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+  categoryField: "expansion",
+  renderer: xRenderer,
+  tooltip: am5.Tooltip.new(root, {})
+}));
+
+xRenderer.grid.template.setAll({
+  location: 1
+})
+xRenderer.labels.template.setAll({
+  rotation: -90,
+  centerY: am5.p50,
+  centerX: am5.p100,
+  paddingRight: 15
+});
+
+xAxis.data.setAll(data);
+
+var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+  min: 0,
+  calculateTotals: true,
+  renderer: am5xy.AxisRendererY.new(root, {
+    strokeOpacity: 0.1
+  })
+}));
+
+var legend = chart.children.push(am5.Legend.new(root, {
+  centerX: am5.p50,
+  x: am5.p50
+}));
+
+function makeSeries(name, fieldName, color) {
+  var series = chart.series.push(am5xy.ColumnSeries.new(root, {
+    name: name,
+    stacked: true,
+    xAxis: xAxis,
+    yAxis: yAxis,
+    valueYField: fieldName,
+    categoryXField: "expansion"
+  }));
+
+  series.columns.template.setAll({
+    tooltipText: "{name}, {categoryX}: {valueY}/{valueYTotal}",
+    tooltipY: am5.percent(10)
+  });
+  series.data.setAll(data);
+
+  series.appear();
+
+  series.bullets.push(function () {
+    return am5.Bullet.new(root, {
+      sprite: am5.Label.new(root, {
+        text: "",
+        fill: root.interfaceColors.get("alternativeText"),
+        centerY: am5.p50,
+        centerX: am5.p50,
+        populateText: true
+      })
+    });
+  });
+  
+  if (color == 1) {
+    series.set("fill", am5.color(0xD3D3D3));
+    series.set("stroke", am5.color(0xD3D3D3));
+  }
+  
+  legend.data.push(series);
+}
+
+makeSeries("Trainers", "trainers", 1);
+makeSeries("Generation 1", "gen1", 0);
+makeSeries("Generation 2", "gen2", 0);
+makeSeries("Generation 3", "gen3", 0);
+makeSeries("Generation 4", "gen4", 0);
+makeSeries("Generation 5", "gen5", 0);
+makeSeries("Generation 6", "gen6", 0);
+makeSeries("Generation 7", "gen7", 0);
+makeSeries("Generation 8", "gen8", 0);
+makeSeries("Generation 9", "gen9", 0);
+                      
+chart.appear(1000, 100);
+
+}); // end am5.ready()
+</script>
+<!-- HTML -->
+<div id="chartdiv2"></div>
   <div class="section-index">
     
     
@@ -1525,9 +1673,9 @@ setSeriesType("line");
             </div>
         <div class="entry">
                 <h5>
-                    <a href="/docs/sets/14-scarlet-violet-series/11-scarlet-violet-surging-sparks/085---meowsitc/">085/191 - Meowsitc</a>
+                    <a href="/docs/sets/14-scarlet-violet-series/11-scarlet-violet-surging-sparks/085---meowstic/">085/191 - Meowstic</a>
                 </h5>
-                <p>085/191 - Meowsitc - Uncommon</p>
+                <p>085/191 - Meowstic - Uncommon</p>
             </div>
         <div class="entry">
                 <h5>
